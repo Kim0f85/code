@@ -16,9 +16,12 @@ public class Q039 {
 	}
 
 	private static void mathwrite(int start, int end) {
+		int sum = 0;
 		for(int i = start; i <=end;i++) {
-			sum+=i;
+			System.out.println(i+"+");
+			sum+=i;																													
 		}
+		System.out.println("\b\b="+sum);
 		
 	}
 }
