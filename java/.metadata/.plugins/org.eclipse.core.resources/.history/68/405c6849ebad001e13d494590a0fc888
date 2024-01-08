@@ -13,7 +13,7 @@ public class Q030 {
 		int chg = 0;
 		
 		
-		if ((input >= 'a'&& input <='z')||(input >= 'A' && input <= 'Z')) {
+		if ((input >= 'a'&&input<='z')||(input>='A'&&input<='Z')) {
 			
 			if (input >= 'a'&&input<='z') {
 				chg = input -32;
