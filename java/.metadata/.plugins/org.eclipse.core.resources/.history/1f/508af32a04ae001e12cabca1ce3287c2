@@ -9,6 +9,5 @@ public class Q041 {
 			sum+=result;
 			System.out.printf("%d + ",result);
 		}
-		System.out.println("\b\b="+sum);
 	}
 }
