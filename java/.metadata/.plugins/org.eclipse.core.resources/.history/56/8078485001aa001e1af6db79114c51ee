@@ -1,0 +1,15 @@
+package com.test.java;
+
+public class Ex09_Error {
+	
+	public static void main(String[] args) {
+		
+		
+		int a = 10; //사용자가 입력한 숫자 (임의)
+		
+		System.out.println(100 / a);
+		
+		
+	}
+
+}

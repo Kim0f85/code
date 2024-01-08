@@ -1,0 +1,65 @@
+package com.test.java;
+
+public class Ex21_if {
+	public static void main(String[] args) {
+		
+		//Ex21_if
+		/*
+			
+			제어문 
+			- 수많은 명령어들의 집합 > 명령어들이 실행되는 순서 > 위 -> 아래 
+			- 제어의 흐름을 통제하는 도구 
+			- 조건 제어, 반복 제어, 분기 제어 
+			
+			
+			1. 조건문
+				- 개발자가 조건을 계시한 후 결과에 따라 흐름을 제어 
+				a. if
+				b. switch 
+				
+			2. 반복문 
+				- 특정 코드를 원하는 횟수만큼 반복 제어 
+				a. for
+				b. while
+				c. do while
+				d. for 
+				
+			3. 분기문 
+				- 코드의 흐름을 원하는 곳으로 이동 
+				a. break
+				b. continue
+				c. goto(JDK 1,5 폐기)
+			
+		
+		
+		*/
+		m1();
+		
+	}//main
+
+	private static void m1() {
+		
+		/*
+			
+			if 문 
+			- 개발자가 조건을 제시한 후 결과에 따라 흐름을 제어 
+			- 조건식 > boolean 값을 가지는 표현식 
+			
+			if (조건식) {
+				문장; 
+			}
+			
+		*/
+		
+		int num = -10;
+		
+		if(num>0) {
+			System.out.println("num은 양수입니다.");
+		}
+		
+		System.out.println("종료");
+		
+		
+	}//m1
+	
+}

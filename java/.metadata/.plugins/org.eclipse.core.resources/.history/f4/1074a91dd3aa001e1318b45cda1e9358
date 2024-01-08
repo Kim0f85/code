@@ -1,0 +1,77 @@
+package com.test.java;
+
+public class Ex17_LocalVariable {
+	
+	
+	int b = 20; //멤버 변수 
+	
+	
+	public static void main(String[] args) {
+		
+		
+		/*
+		 
+		 자바 변수의 종류
+		 - 선언된 위치, 역할 차이 
+		 
+		 1. 멤버 변수, Member Variable
+		 - 클래스 수업
+		 - 클래스 안
+		 
+		 2. 지역 변수, Local Variable
+		 - 여태까지 사용한 변수
+		 - 메서드 내에서 선언한 변수 (지역 = 메서드) 
+		 - 변수 스코프(Scope) > 변수의 사용 영역(범위)
+		 
+		  
+		  지역 변수의 생명 주기, Life Cycle  *** 중요
+		  - 변수가 언제 태어나서 (메모리에 생성) ~ 언제 죽는지 (메모리에 소멸)
+		  - 생성 > 변수 선언문이 실행될 때 
+		  - 소멸 > 변수 선언문이 포함된 블럭을 빠져나갈 때
+		 
+		 
+		
+		 
+		 */
+		
+		int a = 10; //지역변수
+		
+		int num = 100;
+		checkNumber(num); // 오류 안남 , 서로 지역이 다르기 때문이다, 이름을 똑같이 만드는 경우가 많다 
+		
+		aaa();
+		
+	}//main
+	
+	public static void aaa() {
+		
+		int a = 10;
+		
+		bbb();
+		
+	}
+	
+	public static void bbb() {
+		
+		// System.out.println(a); a cannot be resolved to a variable 다른 메서드와 무관하므로  a 오류 
+		// 하고 싶으면 매개변수 활용 (int a 삽입)
+	}
+	 
+	public static void checkNumber(int num) {
+		
+		// int num; Duplicate local variable num 매개 변수도 지역변수의 일종이므로
+	}
+	
+	public static void test1() {
+		
+		int c = 30;
+		int c = 50; // Duplicate local variable c 중첩
+	}
+
+	
+	public static void test2() {
+		
+		int d = 40;
+		int c = 50; // 가능, 다른 지역이므로 
+	}
+}

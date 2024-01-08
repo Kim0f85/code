@@ -1,0 +1,81 @@
+package com.test.java;
+
+public class Ex10_Casting {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 
+		 
+		 형변환, 자료형변환
+		 - Promotion, Casting
+		 - 하나의 자료형을 다른 자료형으로 변환하는 작업 (중요)
+		 - 코드 작성을 유연하게 하기 위해서 사용
+		 - int > double 
+		 - float > short
+		 
+		 1. 암시적 형변환(자동 형변환), Promotion
+		 	- 큰형 = 작은형
+		 	작은형을 큰형에 
+		 	- 100% 안전 
+		 	
+		 
+		 2. 명시적 형변환(강제 형변환), Casting
+		 	- 작은형 = 큰형
+		 	큰형을 작은형에
+		 	- 경우에 따라 다르다. 될 수도 있고 안될수도 있다
+		 	오버플로우 현상이 나타날 수 있다..
+		 
+		 
+		 
+		 */
+		
+		
+		//1. 암시적 형변환
+		byte b1;
+		short s1;
+		
+		b1 = 10; //원
+		
+		//LValue =  RValue 
+		// ***** LValue 와 RValue 의 자료형은 반드시 동일
+
+		// (자료형) : 형변환 연산자 
+		
+		//Short = Byte
+		//컴파일러가 변형시켜서 오류가 안난다
+		// s1 = b1; //값복사, 복사본
+		// Short = Short
+		// ( ) 변환은 우리 눈에 안보인다, 그래서 암시적 s1 = b1; 
+		s1 = (short)b1; 
+		
+		
+		System.out.println(s1);
+		
+		
+		//2. 명시적 형변환
+		byte b2;
+		short s2;
+		
+		s2 = 128; //원본,
+		
+		// Byte(1) = Short(2)
+		// 작은형 = 큰형, 이때는 우리가 직접 (   )
+		b2 = (byte)s2;
+		
+		System.out.println(b2); //복사본
+		// 결과 -128 쓰레기값.
+		
+		//기업 은행 > 계좌
+		int m1;
+		long m2 = 3000000000L;
+		
+		//계좌 이체
+		// 4 = 8
+		m1 = (int)m2;
+		
+		System.out.println("계좌이체결과: %,d원\n" + m1);
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.test.question;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Q002 {
+	
+	public static void main(String[] args) throws IOException {
+		
+		//숫자 2개를 입력받아 아래의 연산식을 출력하시오
+		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("첫번째 숫자: ");
+				
+		String first = reader.readLine();
+		
+		int one = Integer.parseInt(first);
+		
+		System.out.println("두번째 숫자: ");
+		
+		String second = reader.readLine();
+		
+		int two = Integer.parseInt(second);
+		
+		System.out.printf(",1.%d" + ",1.%d", one, two, one + two);
+		
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.test.java;
+
+public class Ex16_Method {
+	
+	public static void main(String[] args) {
+		
+		//public static void hello() 
+		
+		// void > 반환타입
+		// hello > 메서드명 > *** 메서드명은 캐멀 표기법 (소, 대)
+		// () > 인자리스트
+		
+		
+		// void == 없다. == null
+		// 메서드의 반환값(반환타입) 호출했을때 돌려 받는 값 
+		
+		test();
+		
+		
+	}//main
+	
+	public static int test() {
+		
+		int a = 10;
+		int b = 20;
+		int c = a + b;
+		
+		return c; //c를 돌려주겠다, void 자리에도 입력해야 오류가 안난다.
+		
+	}
+
+}

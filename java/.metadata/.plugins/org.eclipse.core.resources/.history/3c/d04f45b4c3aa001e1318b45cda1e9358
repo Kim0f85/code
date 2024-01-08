@@ -1,0 +1,56 @@
+package com.test.java;
+
+public class Ex14_Method {
+	
+	
+	//main 메서드
+	public static void main(String[] args) {
+		
+	
+		/*
+		 
+		 메서드, Method
+		 - 함수(Function), 프로시저(Procedure), 서브 루틴(Sub Routine).. > 메서드의 다른 표현
+		 - 코드의 집합
+		 - 같은 목적을 가진 코드의 집합
+		 - 코드 재사용의 단위(*****), 기본
+		 
+		 
+		 메서드 사용 목적 ?
+		 1. 코드의 재사용
+		 2. 코드의 관리(가독성)
+		 
+		 메서드 사용 단계
+		 1. 메서드 선언
+		 2. 메서드 호출(사용)
+		 
+		 
+		 
+		 
+		 */
+		
+		//요구사항] "안녕하세요." x 5회 출력 
+		//수정사항] "반갑습니다." 수정 , Ctrl + F 변경 한계 
+		
+		//Case A.
+		// - 가장 단순한 방법
+		// - Ctrl + C, V > 하드 코딩
+		// - 비용 : 10 x 5 = 50
+		System.out.println("반갑습니다.");
+		System.out.println("반갑습니다.");
+		System.out.println("반갑습니다.");
+		System.out.println("반갑습니다.");
+		System.out.println("반갑습니다.");
+		System.out.println(); 
+		
+		// 메서드 안에는 메서드를 못 만듦
+		
+		
+	}//main (메인의 끝)
+	
+	//메서드의 선언 위치
+	// - 클래스 내부
+	// - 메서드의 순서는 무관
+	
+
+}//Ex14_Method

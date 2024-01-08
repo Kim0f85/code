@@ -1,0 +1,222 @@
+package com.test.java;
+
+public class Ex02_Variable {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 
+		 
+		 자료형 + 변수 
+		 
+		 변수, Variable
+		 - 여러 가지 값으로 변할 수 있는 수(표면상 정의)
+		 - 개발자가 명령어를 사용해서 메모리에 할당받은 공간
+		 
+		 각 bit 마다 물리적인 주소가 있음 > 메모리 번지(주소) 
+		 주소는 연속으로 잡힘 (첫번째 주소만 기억하면 됨)
+		 주소는 4byte 정수로 되어 있음 (0~42억)
+		 기억하기 어려우니, 숫자 대신 특정문자를 주소 별명으로 지정
+		 
+		 1. 변수 생성하기
+		 - 자료형 변수명;
+		 변수 : int 국어(변수명);
+	
+		 2. 변수 초기화
+		 - 변수명 = 값;
+		 - =(대입 연산자)
+		 
+		 3. 변수 사용하기
+		 - 출력, 연산, 조건, 기록 등
+		 - 변수명
+		 
+		 */
+		
+		//int 국어;
+		int kor;
+		
+		kor = 100;
+		
+		System.out.println(kor);
+		
+		//학생 1명의 영어점수를 저장한 후 화면에 다시 출력하시오.
+		//1. 데이터 성질을 파악 > 영어점수
+		//	a. 형태 > 정수/실수 > 정수
+		//	b. 길이 > 0~100 
+		
+		//2. 1의 결과에 따라 적당한 자료형 선택
+		//	-byte
+		
+		//3. 2의 결과 자료형으로 변수 생성하기
+		
+		
+		byte eng;
+		
+		eng = 90;
+		
+		System.out.println(eng);
+		
+		// 변수(값) 수정하기
+		eng = 95; // 덮어쓰기
+		
+		System.out.println(eng);
+		
+		System.out.println(200);
+		System.out.println(200);
+		
+		// 변수 : 상황에 따라 값이 변함-  eng, 상수 : 데이터 - 200 
+		
+		//수학 점수 > 80
+		//나쁜 코드
+		System.out.println(80);
+		
+		//좋은 코드, 상수를 직접 쓰지 마라 
+		byte math;
+		
+		math = 80;
+		
+		System.out.println(math);
+		
+		//변수명을 만들 때 규칙
+		//1. 영문자 + 숫자 + '_' 사용한다. > 관습
+		//2. 숫자로 시작 불가능
+		//3. 예약어(키워드) 사용 불가능
+		//4. 의미있게(**********) 변수의 이름만 보고 알 수 있게,  가독성 1순위 
+		
+		// byte 국어;
+		byte kor1;
+		byte kor_1;
+		// byte kor+; //Syntax error on token "+", delete this token 더하기로 취급 
+		// byte kor(); 
+		// byte kor$;
+		
+		// byte 1kor;
+		byte _1kor;
+		
+		// byte byte;
+		
+		//국영수
+		byte a;
+		byte b;
+		byte c;
+		
+		byte a1;
+		byte a2;
+		byte a3;
+		
+		//국어 점수 > korean_score 
+		
+		byte korean_score; 
+		
+		byte kor_scor;
+		
+		//코드 리뷰
+
+		// 동일한 이름의 변수는 만들 수 없다.
+	
+		// byte eng; // Duplicate local variable eng
+		
+		// eng = 50;
+		
+		// System.out.println(eng); 어떤 eng 인지 식별 불가	
+		
+		// 변수 선언하는 방식
+		
+		int n1; //선언 > 선언 직후 > 비어있는 상태 > 널(null) 상태
+		
+		n1 = 100; //초기화
+		
+		int n2 = 200; // 선언 + 초기화
+		
+		int n3;
+		int n4;
+		
+		int n5, n6;
+		
+		int n7, n8, n9, n10; 
+		
+		int n11 = 10, n12 = 20, n13 = 30, n14 = 40;
+		
+		int n15, n16 = 10, n17, n18, n19 = 20;
+		
+		// 지도 좌표 (x, y)
+		
+		double x1; // 우리집 x좌표
+		double y1; // 우리집 y좌표
+
+		
+		double x2, y2; // 친구집 x좌표, 친구집 y좌표
+
+		double x3, //마트 x좌표
+		       y3; // 마트 y좌표 (자바는 스페이스, 엔터, 탭 가능하므로) 
+		
+		//학교 x좌표
+		double x4;
+		//학교 y좌표
+		double y4;
+		
+		
+		int m;
+		
+		// *** 변수는 값을 가지고 있지 않은 상태에서는 어느 용도로든 사용이 불가능하다. (출력X, 연산X, 사용금지) > 변수는 반드시 초기화를 해야 한다.
+		
+		// The local variable m may not have been initialized 에러 나면 반드시 메시지 확인
+		// System.out.println(m);
+		
+		// 식별자(변수 이외의 다른 요소) 명명법(패턴)
+		// 1. 헝가리언 표기법
+		// 2. 파스칼 표기법
+		// 3. 캐멀 표기법
+		// 4. 스네이크 표기법
+		// 5. 케밥 표기법
+		// 등등
+		
+		//1. 헝가리언 표기법
+		//- 식별자를 만들 때 식별자의 접두어로 자료형을 표시하는 방법
+		//- 요즘엔 잘 사용 안함
+		//- 사용) 인터페이스명
+		
+		int age;
+		int intAge; // 가독성이 높아진다 나중에 값을 할당할때 어떤 자료형인지 알 수 있다.
+		int int_age;
+		int iAge;
+		int iage;
+		int i_age;
+		
+		// 2. 파스칼 표기법
+		// - 식별자의 첫문자를 대문자 표기 + 나머지 문자를 소문자 표기
+		// - 2개 이상의 합성어 > 각 단어의 첫문자를 대문자 표기
+		// - 사용) 클래스명 (예: public class ExVariable)
+		
+		int weight;
+		int Weight; // 파스칼 표기법
+		
+		int englishscore;
+		int EnglishScore; //  파스칼 표기법, 가독성
+		
+		// 3. 캐멀 표기법
+		// - 식별자의 첫문자를 소문자 표기 + 나머지 문자를 소문자 표기
+		// - 2개 이상의 합성어 > 단어의 첫문자를 대문자 표기
+		// - 사용) 변수명, 메서드명
+		
+		int mathscore; 
+		int MathScore; // 좋지 않은 적용, 클래스명이나... 
+		int mathScore; // 캐멀 표기법
+		
+		// 4. 스네이크 표기법
+		// - 전부 소문자로 표기
+		// - 합성어 > 각 단어를 '_'로 연결
+		// - 사용) 마음대로
+		int englishScore; //캐멀
+		int englishi_score; // 스네이크
+		
+		// 5. 케법 표기법
+		// - 전부 소문자로 표기
+		// - 합성어 > 각단어를 '-'로 연결
+		// - HTML, CSS > 사용
+		// int english-score; 자바에서는 빼기로 인식하므로 못사용한다. 
+		
+		
+	}
+
+}

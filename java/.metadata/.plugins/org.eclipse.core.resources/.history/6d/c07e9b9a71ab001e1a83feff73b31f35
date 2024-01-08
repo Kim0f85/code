@@ -1,0 +1,116 @@
+package com.test.java;
+
+import java.io.ObjectInputStream.GetField;
+import java.util.Calendar;
+import java.util.Date;
+
+public class Ex20_DateTime {
+	public static void main(String[] args) {
+		
+		//Ex20_DateTime.java
+		
+		/*
+			자바의 날짜/시간 자료형 
+			1. Date 클래스 
+			2. Calendar 클래스 
+			---------------------------------
+			3. java.time 패키지 > 추가 클래스 
+			
+			
+			- 시각 > 포인트 (point)
+			- 시간 > 양 (duration)
+			
+			Epoch Time 유닉스 타임 
+			
+			시각, 시간 > 연산
+			
+			
+			시각 + 시각 = X
+			시각 - 시각 = O(시간)
+			
+			시간 + 시간 = O(시간)
+			시간 - 시간 = O(시간)
+			
+			시각 + 시간 = O(시각)
+			시각 - 시간 = O(시각)
+			
+		
+		*/
+		
+		//m1();
+		m2();
+	}//main
+
+	
+
+
+	private static void m1() {
+		
+		//메인보드 > 시계
+		
+		//Date 클래스 
+		//import java.util.Date;
+		Date now = new Date(); //now > 컴퓨터의 시각을 가져온다. 
+		
+		//Fri Jan 05 10:44:20 KST 2024
+		System.out.println(now);
+		
+		
+	}
+	
+	private static void m2() {
+		//Calendar 클래스 
+		Calendar c1 = Calendar.getInstance();
+		
+		System.out.println(c1);
+		System.out.println();
+		
+		//java.util.GregorianCalendar[time=1704420141220,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Seoul",offset=32400000,dstSavings=0,useDaylight=false,transitions=30,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2024,MONTH=0,WEEK_OF_YEAR=1,WEEK_OF_MONTH=1,DAY_OF_MONTH=5,DAY_OF_YEAR=5,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=1,AM_PM=0,HOUR=11,HOUR_OF_DAY=11,MINUTE=2,SECOND=21,MILLISECOND=220,ZONE_OFFSET=32400000,DST_OFFSET=0]
+
+
+		//집합 데이터 > 재가 원하는 항목을 추출 
+		//- int get(int)
+		
+		System.out.println(c1.get(1)); //년도 
+		System.out.println(c1.get(2)); //
+		System.out.println(c1.get(3));
+		System.out.println(c1.get(4));
+		System.out.println(c1.get(5));
+		
+		System.out.println(Calendar.YEAR); //get value 
+		
+		//Calendar.YEAR > 캘린더 상수 
+		System.out.println(c1.get(Calendar.YEAR)); //년도 
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+		System.out.println(c1.get(Calendar.YEAR)); //2024 > 년
+		System.out.println(c1.get(Calendar.MONTH));//0 > 월 (0 ~ 11)
+		System.out.println(c1.get(Calendar.DATE)); //5 > 일
+		System.out.println(c1.get(Calendar.HOUR)); //11 > 시
+		System.out.println(c1.get(Calendar.HOUR_OF_DAY)); // 11 > 시(24시)
+		System.out.println(c1.get(Calendar.MINUTE)); //8 > 분
+		System.out.println(c1.get(Calendar.SECOND)); //40 > 초
+		System.out.println(c1.get(Calendar.MILLISECOND)); // 0.457 > 밀리초 
+		System.out.println(c1.get(Calendar.AM_PM)); //0 > 오전(0), 오후(0)
+		System.out.println(c1.get(Calendar.DAY_OF_YEAR)); //5 > 일(연)
+		System.out.println(c1.get(Calendar.DAY_OF_MONTH)); //5 > 일(월)
+		System.out.println(c1.get(Calendar.DAY_OF_WEEK)); //6 > 요일.일(1)~토(7)
+		System.out.println(c1.get(Calendar.WEEK_OF_YEAR)); //몇주차 > 주(연) (목요일 기준)
+		System.out.println(c1.get(Calendar.WEEK_OF_MONTH)); //며주차 > 주(달)
+		System.out.println();
+		System.out.println();
+		
+		//요구사항] "오늘은 2024년 1월 5일입니다." 출력하시오 
+		
+		System.out.printf("오늘은 %d년 %d월 %d일입니다.\n",c1.get(Calendar.YEAR),c1.get(Calendar.MONTH)+1,c1.get(Calendar.DATE));
+	}
+	
+	
+
+	
+	
+	
+	
+}

@@ -1,0 +1,44 @@
+// 패키지 선언 > 해당 소스파일이 어느 패키지 안에 위치
+package com.test.java;
+
+import javax.sound.midi.Synthesizer;
+
+// 클래스 : public class Ex02 (클래스 헤드), { } (클래스 바디) 
+// - 코드의 집합
+
+public class Ex02 {
+	
+	//메서드 
+	//- public static void main (헤드), { } (바디)
+	//- 코드의 집합
+	public static void main(String[] args) {
+	
+		//실행
+		//1. Run > Run
+		//2. Ctrl + F11 (Run), F11 (Debug)
+		//3. 화살표 메뉴
+		
+		//문장(Statement)
+		//- 하나의 명령어
+		//- ; > 문장 종결자
+		System.out.println("예제입니다.");
+		
+		// 클래스.필드.메서드
+		// 하나의 문장에 엔터, 스페이스, 탭 가능
+		
+		// 이클립스 > 코드 조각 + 자동 완성
+		//- Ctrl + space 현재 위치에서 사용 가능한 코드
+		
+		//템플릿(template), 코드 조각
+		//- 키워드 입력 > 자동 완성
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+		// 해당 문장 + Alt + 방향키(위/아래) - 원하는 위치에 이동, 자동 들여쓰기
+		// Ctrl + Alt + 방향키(위/아래) - 복사
+
+	}
+
+}
+

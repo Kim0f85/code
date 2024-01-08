@@ -1,0 +1,30 @@
+package com.test.question;
+
+import java.util.Calendar;
+
+public class Q019 {
+	
+	public static void main(String[] args) {
+		
+		
+		nowTime();
+		
+		
+	}//main
+
+	private static void nowTime() {
+		
+		
+		Calendar now = Calendar.getInstance();
+		
+		System.out.println(now.get(Calendar.HOUR_OF_DAY));
+		
+		// System.out.printf("현재 시간: %tT\n", now);
+		
+		
+		//현재 시간 : 10시 30분 25초
+		//현재 시간 :  오전 10시 30분 25초 
+		
+	}
+
+}

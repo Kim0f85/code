@@ -1,0 +1,22 @@
+// 패키지 선언 > 해당 소스파일이 어느 패키지 안에 위치
+package com.test.java;
+
+// 클래스 : public class Ex02 (클래스 헤드), { } (클래스 바디) 
+// - 코드의 집합
+
+public class Ex02 {
+	
+	//메서드 
+	//- public static void main (헤드), { } (바디)
+	//- 코드의 집합
+	public static void main(String[] args) {
+	
+		//실행
+		//1. Run > Run
+		//2. Ctrl + F11 (Run), F11 (Debug)
+		//3. 화살표 메뉴
+		System.out.println("예제입니다.");
+		// 명령어
+	}
+
+}

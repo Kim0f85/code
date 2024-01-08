@@ -1,0 +1,35 @@
+package com.test.java;
+
+public class Ex18_Method {
+	public static void main(String[] args) {
+		
+		//Ex18_Method
+		/*
+			
+			메서드 오버로딩, method overloading 
+			- 같은 이름의 메서드를 여러개 만드는 기술 
+			- 메서드의 인자 리스트를 다양한 형태로 구성해서, 같은 이름의 메서드를 여러개 만드는 기술 (면접 단골 질문)
+		
+		
+		
+		*/
+		//요구사항] 선을 그리는 메서드를 선언하시오. 
+		
+		drawLine();
+		
+	}//main 
+	
+	public static void drawLine() {
+		
+		System.out.println("===============");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

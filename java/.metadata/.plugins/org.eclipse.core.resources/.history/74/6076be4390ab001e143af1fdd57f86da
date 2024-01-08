@@ -1,0 +1,136 @@
+package com.test.java;
+
+public class Ex21_if {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 
+		 제어문***연습 많이 해야 함 최소 몇달, 몇년
+		 
+		 - 수많은 명령어들의 집합 > 명령어들이 실행되는 순서 > 위->아래 
+			int a = 10;
+			int b = 20;
+			System.out.println(a + b);
+		 - 제어의 흐름을 통제하는 도구
+		 - 조건 제어, 반복 제어, 분기 제어
+		 
+		 1. 조건문
+		 	- 개발자가 조건을 제시한 후 결과에 따라 흐름을 제어
+		 	a. if
+		 	b. switch
+		 	
+		 2. 반복문
+		 	- 특정 코드를 원하는 횟수만큼 반복 제어
+		 	a. for
+		 	b. while
+		 	c. do while
+		 	d. for
+		 	
+		 3. 분기문
+		 	- 코드의 흐름을 원하는 곳으로 이동
+		 	a. break
+		 	b. continue
+		 	c. goto(JDK 1.5 폐기)
+		 	
+		 	***공부
+		 	1. 알고리즘 > 흐름 > 제어문
+		 	2. 자료구조 > 데이터를 저장하기 위한 구조	 
+		 	
+		 	취업
+		 	필수
+		 	- 수업 내용(*****)
+			- 프로젝트(포폴)
+	
+		 	선택
+			- 코딩 테스트 > 알고리즘 + 자료구조 
+			- CS > 정보처리기사 
+		 
+		 
+		 
+		 */
+		
+		m1();
+
+	}
+
+	private static void m1() {
+		
+		
+		/*
+		 
+		 
+		 if 문
+		 - 개발자가 조건을 제시한 후 결과에 따라 흐름을 제어
+		 - 조건식 > boolean 값을 가지는 표현식
+		 
+		 1.
+		 
+		 if (조건식) {
+		 	문장;
+		 }
+		 
+		 2.
+		 
+		 if (조건식) {
+		 	문장;
+		 } else {
+		 	문장;
+		 } 
+		 1 아니면 2
+		 
+		 
+		 3. 다중 조건문
+		 
+		 if (조건식) {
+		 	문장;
+		 } else if (조건식) {
+		 	문장;
+		 } 
+		 
+		 1 아니면 2는? else if (조건식) {
+		 	문장;
+		 }  계속 붙여서 사용할 수 있음
+		 
+		 
+		 
+		
+		 */
+		
+		int num = 10;
+		
+		if (num > 0) {
+			// 참 블럭
+			System.out.println("num은 양수입니다.");
+		} // true면 문장을 실행함 (조건부 실행)
+		
+		
+		if (num > 0) {
+			// 참 블럭
+			System.out.println("num은 양수입니다.");
+		} 
+		
+		if (num > 0) {
+			System.out.println("num은 양수입니다.");
+		} else {
+			// 거짓 블럭
+			System.out.println("num은 음수입니다.");
+		}
+		
+		if (num > 0) {
+			System.out.println("양수");
+		} else if (num < 0) {
+			System.out.println("음수");
+		} else if (num == 0) {
+			System.out.println("영");
+		}
+		
+		
+		System.out.println("종료");
+		
+		
+		
+		
+	}//m1
+
+}

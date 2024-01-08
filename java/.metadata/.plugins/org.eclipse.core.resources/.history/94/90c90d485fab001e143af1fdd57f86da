@@ -1,0 +1,121 @@
+package com.test.java;
+
+public class Ex18_Method {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 교재 5.6장
+		 
+		 메서드 오버로딩, Method Overloading ***면접 단골 질문
+		 - 같은 이름의 메서드를 여러개 만드는 기술
+		 - 메서드의 인자 리스트를 다양한 형태로 구성해서, 같은 이름의 메서드를 여러개 만드는 기술
+		 
+		 
+		 메서드 오버로딩을 하는 이유?
+		 - 성능 향상 > X
+		 - 개발자에게 도움 > O
+		 
+		 
+		 
+		 메서드 오버로딩 구현 조건 가능
+		 1. 매개변수의 개수
+		 2. 매개변수의 자료형
+		 
+		 
+		 
+		 메서드 오버로딩 구현 조건 불가능
+		 1. 매개변수의 이름
+		 2. 반환값의 자료형
+		 
+		 
+		 메서드를 만드는 중
+		 1. public static void test() {} //O 
+		 2. public static void test() {} //X , 1번  중복
+		 3. public static void test(int n) {} // O - 매개변수의 개수가 달라서 
+		 4. public static void test(int m) {} // X, 3번 호출을 n, m 둘다 받을 수 있기 때문에 구별 불가능
+		 5. public static void test(int n, int m) {} // O
+		 6. public static void test(String s) {} // O 자료형이 다르면 가능
+		 7. public stat int test () {} // X, return 타입이 달라도 1번하고 구분이 안된다 7번 호출 방법이  int result = test(); 이어서 가능할 것 같지만, 오른쪽에 있는 test() 이 먼저 실행되므로 안된다 반환은 호출 뒤의 문제이므로, 1번 호출시 test()와 구분하기 어렵다 그러므로 반환값의 자료형이 달라도 오버로딩 구현이 불가능하다 
+		 
+		 메소드 호출하기
+		 test(); // 1번 호출, 3번 호출 불가 
+		 test(10); // 3번 호출 
+		 test(10, 20); // 5번
+		 test("문자열") // 6번 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 */
+		
+		//요구사항] 선을 그리는데 메서드를 선언하시오.
+		
+		// drawLine();
+		// System.out.println("    성적표");
+		// drawLine();
+		
+		//요구사항] ------
+		//요구사항] ****** 
+		
+		
+		// 기본선
+		drawLine();
+		drawLine();
+		drawLine();
+		drawLine("+");
+		drawLine("+");
+		drawLine("+");
+		
+		
+		System.out.println(10);
+		System.out.println("문자열");
+		
+		
+	}//main
+
+	
+	public static void println(int num) {
+		
+	}
+	
+	public static void println(String txt) {
+		
+	}
+	
+	// public static void drawLine() {
+		
+		//System.out.println("================");
+		
+	//}
+	
+	//public static void drawLine() {
+		
+		//System.out.println("----------------");
+		
+		//public static void drawLine() {
+			
+			//System.out.println("*************");
+	
+	public static void drawLine() {
+		
+		System.out.println("================");
+		
+}
+		
+	public static void drawLine(String c) {
+	
+		System.out.print(c);
+	
+		System.out.print(c);
+	
+	// 인자값이 다르면 허용 = 오버로딩 
+}
+		
+		
+}
+			
+			

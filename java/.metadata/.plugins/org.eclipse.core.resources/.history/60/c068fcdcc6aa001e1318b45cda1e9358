@@ -1,0 +1,14 @@
+package com.test.question;
+
+public class Q001 {
+	
+	public static void main(String[] args) {
+		
+		
+		//문제1. http://pinnpublic.dothome.co.kr/ 만나이 기준 
+		// 자바파일만 압축해서 업로드 
+		// https://drive.google.com/drive/folders/1_1P3qvz88akTa26obT8Hfc_hA8scNa5Y (총 7개) 
+		// 5번 원주율 
+	}
+
+}

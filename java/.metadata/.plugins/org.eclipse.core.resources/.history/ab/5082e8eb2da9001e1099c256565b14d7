@@ -1,0 +1,29 @@
+package com.test.java;
+
+public class Ex02_Variable {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 
+		 
+		 자료형 + 변수 
+		 
+		 변수, Variable
+		 - 여러 가지 값으로 변할 수 잇는 수(표면상 정의)
+		 - 개발자가 명령어를 사용해서 메모리에 할당받은 공간
+		 
+		 각 bit 마다 물리적인 주소가 있음 > 메모리 번지(주소) 
+		 주소는 연속으로 잡힘 (첫번째 주소만 기억하면 됨)
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 */
+	}
+
+}

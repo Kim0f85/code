@@ -1,0 +1,37 @@
+package com.test.java;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+// import java.io.BufferedReader;
+// import java.io.InputStreamReader;
+// 클래스 임포트 (java.io 패키지 폴더에 있는 BufferedReader,InputStreamReader  기능을 가져오겠다.)
+
+// import java.io.*; //와일드카드(모든 클래스) java.io.에 있는 모든 클래스를 가져오겠다. 하지만 따로따로 선언하는게 좋다.
+
+public class Ex08_BufferedReader {
+	
+	public static void main(String[] args) throws IOException {
+		
+		//BufferedReader 클래스
+		
+		//요구사항] 사용자로부터 문자 1개를 입력받아서 화면에 출력
+		
+		//ctrl + shift + O 한 번에  import 다 해줌
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		// class를 사용할때는 도구(class)를 사용하겠다고 선언해야 한다 
+		// import java.io.BufferedReader;
+		
+		// BufferedReader (자료형) reader (변수) 
+		
+		// 콘솔로부터 키보드값을 입력받을 수 있는 도구 
+		// System.in.read() 와 똑같은 기능
+		int code = reader.read();
+		
+		System.out.println(code);
+		
+		
+	}
+
+}

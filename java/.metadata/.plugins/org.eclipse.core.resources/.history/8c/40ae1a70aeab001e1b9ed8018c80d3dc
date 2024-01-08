@@ -1,0 +1,39 @@
+package com.test.question;
+
+public class Q016 {
+	public static void main(String[] args) {
+		sum(10);
+//		sum(10, 20);
+//		sum(10, 20, 30);
+//		sum(10, 20, 30, 40);
+//		sum(10, 20, 30, 40, 50);
+//		
+		
+	}
+
+//	private static String sum (int i, int j, int k, int l, int m) {
+//		// TODO Auto-generated method stub
+//		
+//	}
+//
+//	private static String sum (int i, int j, int k, int l) {
+//		// TODO Auto-generated method stub
+//		
+//	}
+//
+//	private static String sum (int i, int j, int k) {
+//		// TODO Auto-generated method stub
+//		
+//	}
+//
+//	private static String sum (int i, int j) {
+//		// TODO Auto-generated method stub
+//		
+//	}
+
+	private static String sum (int i) {
+		
+		return i +"="+i;
+		
+	}
+}

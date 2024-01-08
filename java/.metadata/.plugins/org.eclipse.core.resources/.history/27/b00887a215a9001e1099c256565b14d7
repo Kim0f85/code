@@ -1,0 +1,52 @@
+package com.test.java;
+
+public class Ex01_DataType {
+	
+	public static void main(String[] args) {
+		/*
+		 
+		 새로운 언어 > 자료형
+		 
+		 자바의 자료형, Data Type
+		 - 데이터(자료)의 형태
+		 - 데이터의 길이(범위)와 생김새를 미리 정의하고, 그 정의에 따라 분류해놓은 규칙
+		 
+		 초등학교
+		 - 100, 200, 300 > 정수
+		 - 3.14, 5.64, 2.22 > 실수 
+		 - 홍길동, 자바, 컴퓨터 > 문자
+		 
+		 자바의 자료형의 기준
+		 1. 형태
+		 2. 길이
+		 
+		 자료형 분류
+		 1. 기본형, 원시형(Primitive Type), 값형(Value Type)
+			- 8가지(byte, short, int, long, float, double, char, boolean)
+			
+			a. 숫자형
+				1. 정수형
+					a. byte
+					b. short
+					c. int
+					d. long
+				2. 실수형
+					a. float
+					b. double
+			b. 문자형
+				1. 문자형
+					a. char
+			c. 논리형
+				1. 논리형
+					a. boolean
+		 
+		 2. 참조형(Reference Type) - 종류 무한대
+		 	- 클래스(class) > 사용자가 정의 가능
+		 	- 배열(Array)
+		 	- 열거형(Enum)
+		 	- 인터페이스(Interface)
+		 
+		 */
+	}
+
+}

@@ -1,0 +1,34 @@
+//주석, Comment
+//- 컴파일러가 번역을 하는 대상에서 제외시켜라
+
+//한줄 주석, Single Line (Enter 치면 주석영역을 벗어남)
+
+/*
+ 다중라인 주석, Multiline Comment > Ctrl + Shift + / , 풀 때는 역슬러쉬
+ 
+ */
+
+//패키지 선언
+package com.test.java;
+
+public class Ex01 {
+	
+	// main ctrl + space 자동 완성
+	//Code Asist > 기능
+	// 템플릿 (Templates)
+	// 코드조각 (Code Snippets)
+	// Itellisense > MS 툴
+	
+	public static void main(String[] args) {
+		
+		System.out.println("첫번째 예제입니다.");
+	}
+	
+	// 영역 선택 후 CTRL+/ 누르면 선택 영역 한줄 주석 
+
+}
+
+// } 교정할 때 - ctrl + shift + F 
+
+
+

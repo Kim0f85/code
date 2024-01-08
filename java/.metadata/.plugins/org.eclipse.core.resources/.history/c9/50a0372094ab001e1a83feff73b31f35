@@ -1,0 +1,134 @@
+package com.test.java;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Ex21_if {
+	public static void main(String[] args) throws IOException {
+		
+		//Ex21_if
+		/*
+			
+			제어문 
+			- 수많은 명령어들의 집합 > 명령어들이 실행되는 순서 > 위 -> 아래 
+			- 제어의 흐름을 통제하는 도구 
+			- 조건 제어, 반복 제어, 분기 제어 
+			
+			
+			
+			1. 조건문
+				- 개발자가 조건을 계시한 후 결과에 따라 흐름을 제어 
+				a. if
+				b. switch 
+				
+			2. 반복문 
+				- 특정 코드를 원하는 횟수만큼 반복 제어 
+				a. for
+				b. while
+				c. do while
+				d. for 
+				
+			3. 분기문 
+				- 코드의 흐름을 원하는 곳으로 이동 
+				a. break
+				b. continue
+				c. goto(JDK 1,5 폐기)
+			
+		
+		
+		*/
+		//m1();
+		m2();
+	}//main
+
+	private static void m2() throws IOException {
+		//나이 입력 > 판단
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));//Ctrl+Shift+O
+		
+		System.out.print("나이: ");
+		int age = Integer.parseInt(reader.readLine());
+		
+		String result = (age>=18)?"성인":"미성년자";
+		System.out.println(result);
+		
+		if(age >=18) {
+			System.out.println("성인");
+		}else {
+			System.out.println("미성년자");
+		}
+	}
+
+	private static void m1() {
+		
+		/*
+			
+			if 문 
+			- 개발자가 조건을 제시한 후 결과에 따라 흐름을 제어 
+			- 조건식 > boolean 값을 가지는 표현식 
+			
+			if (조건식) {
+				문장; 
+			}
+			-----------------------
+			
+			if (조건식) {
+				문장; 
+			} else {
+				문장;
+			}
+			---------------------------
+			다중 조건문 
+			if (조건식) {
+				문장; 
+			} else if (조건식){
+				문장;
+			}
+			----------------------
+			if (조건식){
+				문장;
+			}
+			[else if(조건식){		// can use if you want as number of times you want
+				문장;
+			}] x N
+			[else {
+				문장;				// can use if you want 
+			}]
+			
+			
+			
+			
+			
+		*/
+		
+		int num = -10;
+		
+		if(num>0) {
+			//참 블럭
+			System.out.println("num은 양수입니다.");
+		} 
+		
+		if(num>0) {
+			//참 블럭
+			System.out.println("num은 양수입니다.");
+		} else {
+			//거짓 블럭
+			System.out.println("num은 음수입니다.");
+		}
+		
+		if(num>0) {
+			System.out.println("양수");
+		} else if (num<0) {
+			System.out.println("음수");
+		} else {
+			System.out.println("영");
+		}
+		
+		
+		
+		System.out.println("종료");
+		
+		
+	}//m1
+	
+}

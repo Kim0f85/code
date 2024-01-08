@@ -1,0 +1,400 @@
+package com.test.java;
+
+public class HomeWork {
+	
+	public static void main(String[] args) {
+		
+		byte englishScore;
+		englishScore = 95;
+		System.out.println("제 영어점수는 " + englishScore + "점입니다.");
+		
+		byte mathScore;
+		mathScore = 100;
+		System.out.println("제 수학점수는 " + mathScore + "점입니다.");
+		
+		byte korScore;
+		korScore = 90;
+		System.out.println("제 국어점수는 " + korScore + "점입니다.");
+		
+		byte scienceScore;
+		scienceScore = 85;
+		System.out.println("제 과학점수는 " + scienceScore + "점입니다.");
+		
+		byte socialScore;
+		socialScore = 90;
+		System.out.println("제 사회점수는 " + socialScore + "점입니다.");
+		
+		byte musicScore;
+		musicScore = 75;
+		System.out.println("제 음악점수는 " + musicScore + "점입니다.");
+		
+		byte physicalScore;
+		physicalScore = 80;
+		System.out.println("제 체육점수는 " + physicalScore + "점입니다." );
+		
+		byte computerScore;
+		computerScore = 85;
+		System.out.println("제 컴퓨터점수는 " + computerScore + "점입니다.");
+		
+		byte swimScore;
+		swimScore = 70;
+		System.out.println("제 수영점수는 " + swimScore + "점입니다.");
+		
+		short totalScore;
+		totalScore = 770;
+		System.out.println("제 총점수는 " + totalScore + "점입니다.");
+		
+		float averageScore;
+		averageScore = totalScore/9F;
+		System.out.println("제 평균은 " + averageScore + "점입니다.");
+		
+		long zooWeight;
+		zooWeight = 1000000000000L;
+		System.out.println("동물원에 있는 사람들과 동물들 몸무게합은 " + zooWeight + "kg입니다.");
+		
+		byte humanWeight;
+		humanWeight = 80;
+		System.out.println("사람 몸무게는 " + humanWeight + "kg입니다.");
+		
+		short elephantWeight;
+		elephantWeight = 150;
+		System.out.println("코끼리 몸무게는 " + elephantWeight + "kg입니다.");
+		
+		short giraffeWeight;
+		giraffeWeight = 130;
+		System.out.println("기린 몸무게는 " + giraffeWeight + "kg입니다.");
+		
+		short lionWeight;
+		lionWeight = 100;
+		System.out.println("사자 몸무게는 " + lionWeight + "kg입니다.");
+		
+		short tigerWeight;
+		tigerWeight = 125;
+		System.out.println("호랑이 몸무게는 " + tigerWeight + "kg입니다.");
+		
+		short bearWeight;
+		bearWeight = 180;
+		System.out.println("곰 몸무게는 " + bearWeight + "kg입니다.");
+		
+		short corcodileWeight;
+		corcodileWeight = 155;
+		System.out.println("악어 몸무게는 " + corcodileWeight + "kg입니다.");
+		
+		short slothWeight;
+		slothWeight = 90;
+		System.out.println("나무늘보 몸무게는 " + slothWeight + "kg입니다.");
+		
+		short camelWeight;
+		camelWeight = 180;
+		System.out.println("낙타 몸무게는 " + camelWeight + "kg입니다.");
+		
+		short rhinoWeight;
+		rhinoWeight = 250;
+		System.out.println("코뿔소 몸무게는 " + rhinoWeight + "kg입니다.");
+		
+		short kangarooWeight;
+		kangarooWeight = 180;
+		System.out.println("캥거루 몸무게는 " + kangarooWeight + "kg입니다.");
+		
+		float birdWeight;
+		birdWeight = 1.25F;
+		System.out.println("새 몸무게는 " + birdWeight + "kg입니다.");
+		
+		float hamsterWeight;
+		hamsterWeight = 0.95F;
+		System.out.println("햄스터 몸무게는 " + hamsterWeight + "kg입니다.");
+		
+		int pizzaPrice;
+		pizzaPrice = 35000;
+		System.out.println("피자 가격은 " + pizzaPrice + "입니다.");
+		
+		int hambugerPrice;
+		hambugerPrice = 25000;
+		System.out.println("햄버거 가격은 " + hambugerPrice + "입니다.");
+		
+		int spaghettiPrice;
+		spaghettiPrice = 30000;
+		System.out.println("스파게티 가격은 " + spaghettiPrice + "입니다.");
+		
+		int sushiPrice;
+		sushiPrice = 50000;
+		System.out.println("초밥 가격은 " + sushiPrice + "입니다.");
+		
+		int sasimiPrice;
+		sasimiPrice = 80000;
+		System.out.println("회 가격은 " + sasimiPrice + "입니다.");
+		
+		int kimbapPrice;
+		kimbapPrice = 5000;
+		System.out.println("김밥 가격은 " + kimbapPrice + "입니다.");
+		
+		int ramenPrice;
+		ramenPrice = 10000;
+		System.out.println("라멘 가격은 " + ramenPrice + "입니다.");
+		
+		int tteokPrice;
+		tteokPrice = 8000;
+		System.out.println("떡볶이 가격은 " + tteokPrice + "입니다.");
+		
+		int buffetPrice;
+		buffetPrice = 100000;
+		System.out.println("뷔페 가격은 " + buffetPrice + "입니다.");
+		
+		int meatPrice;
+		meatPrice = 200000;
+		System.out.println("고기 가격은 " + meatPrice + "입니다.");
+		
+		int caviarPrice;
+		caviarPrice = 500000;
+		System.out.println("캐비어 가격은 " + caviarPrice + "입니다.");
+		
+		float koreaLifetime;
+		koreaLifetime = 82.7f;
+		System.out.println("한국 기대 수명은 " + koreaLifetime + "세입니다.");
+		
+		float japanLifetime;
+		japanLifetime = 83.9f;
+		System.out.println("일본 기대 수명은 " + japanLifetime + "세입니다.");
+		
+		float chinaLifetime;
+		chinaLifetime = 81.3f;
+		System.out.println("중국 기대 수명은 " + chinaLifetime + "세입니다.");
+		
+		float germanyLifetime;
+		germanyLifetime = 80.5f;
+		System.out.println("독일 기대 수명은 " + germanyLifetime + "세입니다.");
+		
+		float denmarkLifetime;
+		denmarkLifetime = 79.7f;
+		System.out.println("덴마크 기대 수명은 " + denmarkLifetime + "세입니다.");
+		
+		float swissLifetime;
+		swissLifetime = 88.7f;
+		System.out.println("스위스 기대 수명은 " + swissLifetime + "세입니다.");
+		
+		float italyLifetime;
+		italyLifetime = 82.7f;
+		System.out.println("이탈리아 기대 수명은 " + italyLifetime + "세입니다.");
+		
+		
+		double kimHeight;
+		kimHeight = 158.8;
+		System.out.println("김씨의 키는 " + kimHeight + "cm입니다.");
+		
+		double parkHeight;
+		parkHeight = 161.5;
+		System.out.println("박씨의 키는 " + parkHeight + "cm입니다.");
+		
+		double jeonHeight;
+		jeonHeight = 145.9;
+		System.out.println("전씨의 키는 " + jeonHeight + "cm입니다.");
+		
+		double chaeHeight;
+		chaeHeight = 174.9;
+		System.out.println("채씨의 키는 " + chaeHeight + "cm입니다.");
+		
+		double doHeight;
+		doHeight = 182.5;
+		System.out.println("도씨의 키는 " + doHeight + "cm입니다.");
+		
+		double namHeight;
+		namHeight = 184.7;
+		System.out.println("남씨의 키는 " + namHeight + "cm입니다.");
+		
+		double noHeight;
+		noHeight = 179.79;
+		System.out.println("노씨의 키는 " + noHeight + "cm입니다.");
+		
+		double youHeight;
+		youHeight = 188.8;
+		System.out.println("유씨의 키는 " + youHeight + "cm입니다.");
+		
+		double juHeight;
+		juHeight = 173.8;
+		System.out.println("주씨의 키는 " + juHeight + "cm입니다.");
+		
+		double haHeight;
+		haHeight = 165.8;
+		System.out.println("하씨의 키는 " + haHeight + "cm입니다.");
+		
+		
+		long seoulHouse;
+		seoulHouse = 1000000000L;
+		System.out.println("서울 집값은 " + seoulHouse + "원입니다.");
+		
+		long busanHouse;
+		busanHouse = 500000000L;
+		System.out.println("부산 집값은 " + busanHouse + "원입니다.");
+		
+		long sengnamHouse;
+		sengnamHouse = 550000000L;
+		System.out.println("성남 집값은 " + sengnamHouse + "원입니다.");
+		
+		long jejuHouse;
+		jejuHouse = 800000000L;
+		System.out.println("제주 집값은 " + jejuHouse + "원입니다.");
+		
+		long gwangjuHouse;
+		gwangjuHouse = 300000000L;
+		System.out.println("광주 집값은 " + gwangjuHouse + "원입니다.");
+		
+		long hongkongHouse;
+		hongkongHouse = 2000000000L;
+		System.out.println("홍콩 집값은 " + hongkongHouse + "원입니다.");
+		
+		long newyorkHouse;
+		newyorkHouse = 5000000000L;
+		System.out.println("뉴욕 집값은 " + newyorkHouse + "원입니다.");
+		
+		long beijingHouse;
+		beijingHouse = 1500000000L;
+		System.out.println("베이징 집값은 " + beijingHouse + "원입니다.");
+		
+		long tokyoHouse;
+		tokyoHouse = 2500000000L;
+		System.out.println("도쿄 집값은 " + tokyoHouse + "원입니다.");
+		
+		
+		
+		char oneName;
+		oneName = '박';
+		System.out.println("1번의 성은 " + oneName + "입니다.");
+		
+		char twoName;
+		twoName = '김';
+		System.out.println("2번의 성은 " + twoName + "입니다.");
+		
+		char threeName;
+		threeName = '이';
+		System.out.println("3번의 성은 " + threeName + "입니다.");
+		
+		char fourName;
+		fourName = '최';
+		System.out.println("4번의 성은 " + fourName + "입니다.");
+		
+		char fiveName;
+		fiveName = '유';
+		System.out.println("5번의 성은 " + fiveName + "입니다.");
+		
+		char sixName;
+		sixName = '남';
+		System.out.println("6번의 성은 " + sixName + "입니다.");
+		
+		char sevenName;
+		sevenName = '노';
+		System.out.println("7번의 성은 " + sevenName + "입니다.");
+		
+		char eightName;
+		eightName = '장';
+		System.out.println("8번의 성은 " + eightName + "입니다.");
+		
+		char nineName;
+		nineName = '도';
+		System.out.println("9번의 성은 " + nineName + "입니다.");
+		
+		char tenName;
+		tenName = '채';
+		System.out.println("10번의 성은 " + tenName + "입니다.");
+
+
+		boolean midtest_1;
+		midtest_1 = true;
+		System.out.println("중간고사 1번 답은 " + midtest_1 + "입니다.");
+		
+		boolean midtest_2;
+		midtest_2 = false;
+		System.out.println("중간고사 2번 답은 " + midtest_2 + "입니다.");
+		
+		boolean midtest_3;
+		midtest_3 = true;
+		System.out.println("중간고사 3번 답은 " + midtest_3 + "입니다.");
+		
+		boolean midtest_4;
+		midtest_4 = false;
+		System.out.println("중간고사 4번 답은 " + midtest_4 + "입니다.");
+		
+		boolean midtest_5;
+		midtest_5 = false;
+		System.out.println("중간고사 5번 답은 " + midtest_5 + "입니다.");
+		
+		boolean midtest_6;
+		midtest_6 = true;
+		System.out.println("중간고사 6번 답은 " + midtest_6 + "입니다.");
+		
+		boolean midtest_7;
+		midtest_7 = false;
+		System.out.println("중간고사 7번 답은 " + midtest_7 + "입니다.");
+		
+		boolean midtest_8;
+		midtest_8 = true;
+		System.out.println("중간고사 8번 답은 " + midtest_8 + "입니다.");
+		
+		boolean midtest_9;
+		midtest_9 = false;
+		System.out.println("중간고사 9번 답은 " + midtest_9 + "입니다.");
+		
+		boolean midtest_10;
+		midtest_10 = true;
+		System.out.println("중간고사 10번 답은 " + midtest_10 + "입니다.");
+		
+		
+		String firstFruit;
+		firstFruit = "내가 가장 좋아하는 과일은 포도입니다.";
+		System.out.println(firstFruit);
+		
+		String secondFruit;
+		secondFruit = "내가 두번째 좋아하는 과일은 수박입니다.";
+		System.out.println(secondFruit);
+		
+		String thirdFruit;
+		thirdFruit = "내가 세번째 좋아하는 과일은 사과입니다.";
+		System.out.println(thirdFruit);
+		
+		String firstFood;
+		firstFood = "내가 가장 좋아하는 음식은 미역국입니다.";
+		System.out.println(firstFood);
+		
+		String secondFood;
+		secondFood = "내가 두번째 좋아하는 음식은 순대국밥입니다.";
+		System.out.println(secondFood);
+		
+		String thirdFood;
+		thirdFood = "내가 세번째 좋아하는 음식은 닭볶음탕입니다.";
+		System.out.println(thirdFood);
+		
+		String firstExercise;
+		firstExercise = "내가 가장 좋아하는 운동은 헬스입니다.";
+		System.out.println(firstExercise);
+		
+		String secondExercise;
+		secondExercise = "내가 두번째 좋아하는 운동은 걷기입니다.";
+		System.out.println(secondExercise);
+		
+		String thirdExercise;
+		thirdExercise = "내가 세번째 좋아하는 운동은 등산입니다.";
+		System.out.println(thirdExercise);
+		
+		String myHobby;
+		myHobby = "내 취미는 독서입니다.";
+		System.out.println(myHobby);
+		
+		
+		char charA = 'A';
+		
+		int intA = charA;
+		
+		System.out.println(intA);
+		
+		int intZ = 90;
+		
+		char charZ = (char) intZ;
+		
+		System.out.println(charZ);
+		
+	
+		
+		
+				
+	}
+
+}

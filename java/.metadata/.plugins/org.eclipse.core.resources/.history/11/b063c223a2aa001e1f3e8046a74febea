@@ -1,0 +1,27 @@
+package com.test.java;
+
+public class Ex12_Operator {
+	public static void main(String[] args) {
+		
+		//Ex12_Operator
+		/*
+			비교연산자 
+			- >, >=, <, <=, = =(equal), !=(not equal)
+			- 2항 연산자 
+			- 피연산자들의 우위(동등) 비교
+			- 피연산자는 숫자형을 가진다.
+			- 연산의 결과가 boolean이다. (true, false)
+			
+		
+		
+		
+		
+		*/
+		
+		int a = 10;
+		int b = 3; 
+		
+		System.out.println("%d>%d = %b\n",a,b,a>b);
+	
+	}
+}
