@@ -1,8 +1,9 @@
 package com.test.java;
 
+import java.util.Arrays;
 import java.util.Calendar;
 
-import javax.swing.plaf.basic.BasicPanelUI;
+import javax.xml.stream.events.Namespace;
 
 public class Ex27_Array {
 	public static void main(String[] args) {
@@ -17,36 +18,230 @@ public class Ex27_Array {
 		// m4();
 		// m5();
 		// m6();
-		//m7();
-		m8();
-
+		// m7();
+		// m8();
+		// m9();
+		// m10();
+		// m11();
+		//m12();
+		m13();
+		
 	}// main
 
-	private static void m8() {
-		//배열 복사
-		//1. 앝은 복사, shallow copy
-		//- 주소값 복사 
-		//- side effect 발생 
+	private static void m13() {
+		int[]nums = {5,3,1,4,2};
+		String[] names = {"홍길동","아무개","테스트","유재석","강아지","고양이","도깨비","박명수","조세호","병아리"};
 		
-		//2. 깊은 복사, Deep copy
-		//- 실제 배열 복사 
-		//- Side Effect 발생 안함 
+		//quick sort
+		Arrays.sort(nums);
+		System.out.println(Arrays.toString(nums));
 		
+		Arrays.sort(names);
+		System.out.println(Arrays.toString(names));
+		
+		
+		
+	}
+
+	private static void m12() {
+
+		// 정렬
+		// - 크기 비교 후 > 재배치
+
+		// 1. 오름차순
+		// a. 숫자: 작은수 > 큰수
+		// b. 문자열: 문자코드값 순
+		// c. 날짜시간: 과거 > 미래
+
+		// 2. 내림차순
+		// a. 숫자: 큰수 > 작은수
+		// b. 문자열: 문자코드값 역순
+		// c. 날짜시간: 미래 > 과거
+
+		// 정렬 구현
+		// 1. 직접 구현 > 정렬 알고리즘
+		// 2. JDK 구현된 기능
+
+		// 버블 정렬 + swap
+		// swap > 두 공간의 데이터를 서로 바꾸는 작업
+		
+		int a = 10;
+		int b = 5; 
+		int temp;
+		
+		temp = a;
+		a = b;
+		b = temp;
+		
+		System.out.println("a: "+a);
+		System.out.println("b: "+b);
+		
+		int[]nums = {5,3,1,4,2};
+		System.out.println(Arrays.toString(nums));
+		
+		for(int i=0; i<nums.length-1;i++) {//사이클 (0,1,2,3)
+			
+			for(int j=0; j<nums.length-1-i;j++) {
+				//오름차순 
+				if(nums[j]>nums[j+1]) {
+					temp = nums[j];
+					nums[j]=nums[j+1];
+					nums[j+1] = temp;
+				}
+				
+			}
+			
+		}
+		System.out.println(Arrays.toString(nums));
+		
+
+		
+		String name1 = "홍길동";
+		String name2 = "아무개";
+		System.out.println(name1.compareTo(name2));
+
+		
+		String[] name = {"홍길동","아무개","테스트","유재석","강아지","고양이","도깨비","박명수","조세호","병아리"};
+		
+		for(int i =0;i<name.length-1;i++) {
+			for (int j =0; j<name.length-1-i;j++) {
+				if (name[j].compareTo(name[j+1])>0){
+					String temp2 = name[j];
+					name[j] = name[j+1];
+					name[j+1]=temp2;
+				}
+			}
+		}
+		
+	}	
+		
+
+	private static void m11() {
+		// 배열 초기화 리스트
+
+		int[] nums1 = new int[5];
+		nums1[0] = 95;
+		nums1[1] = 88;
+		nums1[2] = 67;
+		nums1[3] = 89;
+		nums1[4] = 64;
+		System.out.println(Arrays.toString(nums1));
+
+		int[] nums2 = new int[] { 95, 88, 67, 89, 64 };
+		System.out.println(Arrays.toString(nums2));
+
+		int[] nums3 = { 95, 88, 67, 89, 64 }; // 많이 사용
+		System.out.println(Arrays.toString(nums3));
+
+		String[] names1 = new String[3];
+		names1[0] = "홍길동";
+		names1[1] = "임꺽정";
+		names1[2] = "도깨비";
+
+		String[] names2 = { "홍길동", "임꺽정", "도깨비" };
+
+		System.out.println(Arrays.toString(names1));
+		System.out.println(Arrays.toString(names2));
+
+	}
+
+	private static void m10() {
+		// 배열 자동 초기화
+		// - 배열은 생성 직후 모든 요소(방)가 초기화가 된다.
+
+		// 초기화 규칙
+		// 1. 정수배열 > 0
+		// 2. 실수배열 > 0.0
+		// 3. 문자열 > \0\(u0000)
+		// 4. 논리배열 > false
+		// 5. 참조형배열 > null
+
+		int[] list1 = new int[3];
+		System.out.println(Arrays.toString(list1));
+
+		byte[] list2 = new byte[3];
+		System.out.println(Arrays.toString(list2));
+
+		double[] list3 = new double[3];
+		System.out.println(Arrays.toString(list3));
+
+		char[] list4 = new char[3];
+		System.out.println(Arrays.toString(list4));
+
+		boolean[] list5 = new boolean[3];
+		System.out.println(Arrays.toString(list5));
+
+		String[] list6 = new String[3];
+		System.out.println(Arrays.toString(list6));
+
+	}
+
+	private static void m9() {
+		// Array 클래스
+		// - 유틸리티 클래스
+		// - 배열과 관련된 여러가지 기능을 구현한 클래스
+		// - 배열을 조작하는 편리한 기능을 제공하는 역할
+
 		int[] nums = new int[3];
 
 		nums[0] = 10;
 		nums[1] = 20;
 		nums[2] = 30;
-		
-		int[]copy = new int[3];
-		for(int i=0;i<nums.length;i++) {
-			//방과 방끼리의 복사 > 요소끼리의 복사 
-			//int = int 
-			copy[i] = nums[i]; 
-		}
-		
+
+		// 배열의 상태를 확인?
+		// [I = int[]
+		// @
+		// 2ff4acd0 = 메모리 주소(16진수 숫자)
+		System.out.println(nums); // 슬모 없음
+
+		printArray(nums);
+		System.out.println(Arrays.toString(nums));// dump(덤프)
+
+		// *** C계열의 언어들은 범위를 나타날때
+		// - 시작위치(inclusive) ~ 끝위치(exclusive)
+
+		int[] copy;
+		// 깊은 복사
+		copy = Arrays.copyOfRange(nums, 0, nums.length);
+
 		nums[0] = 100;
-		
+		System.out.println(Arrays.toString(nums));
+		System.out.println(Arrays.toString(copy));
+
+	}
+
+	private static void printArray(int[] nums) {
+		for (int i = 0; i < nums.length; i++) {
+			System.out.printf("%3d", nums[i]);
+		}
+		System.out.println();
+	}
+
+	private static void m8() {
+		// 배열 복사
+		// 1. 앝은 복사, shallow copy
+		// - 주소값 복사
+		// - side effect 발생
+
+		// 2. 깊은 복사, Deep copy
+		// - 실제 배열 복사
+		// - Side Effect 발생 안함
+
+		int[] nums = new int[3];
+
+		nums[0] = 10;
+		nums[1] = 20;
+		nums[2] = 30;
+
+		int[] copy = new int[3];
+		for (int i = 0; i < nums.length; i++) {
+			// 방과 방끼리의 복사 > 요소끼리의 복사
+			// int = int
+			copy[i] = nums[i];
+		}
+
+		nums[0] = 100;
+
 		System.out.println(copy[0]);
 	}
 
@@ -60,16 +255,15 @@ public class Ex27_Array {
 		nums[0] = 10;
 		nums[1] = 20;
 		nums[2] = 30;
-		
+
 		changeArray(nums);
 		System.out.println(nums[0]);
 	}
 
 	private static void changeArray(int[] nums) {
-		nums[0] =123;
+		nums[0] = 123;
 		System.out.println(nums[0]);
-		
-		
+
 	}
 
 	private static void changeValue(int a) {

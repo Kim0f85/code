@@ -1,0 +1,55 @@
+package com.test.question;
+
+import java.util.Scanner;
+
+public class Q045 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int count = scan.nextInt();
+		int i = 1;
+		String checker = "";
+		
+		
+		while (i <= count) {
+			if (i<10) {
+				System.out.print(checker1(i,checker)); 
+			}else if (i<100){
+				System.out.print(checker2(i,checker));
+			}else if(i<1000) {
+				//System.out.print(checker3(i,checker));
+			}
+			i++;
+		}
+	}
+
+	private static String checker2(int i, String checker) {
+		String plus = "";
+		if ((int)i/10==3||(int)i/10==6||(int)i/10==9) {
+			plus = "짝";
+			if(i%10==3||i%10==6||i%10==9) {
+				plus = plus+"짝";
+				checker = checker + plus;
+			}else {
+				checker = checker + plus;
+			}
+			
+		}else if(i%10==3||i%10==6||i%10==9) {
+			plus = "짝";
+			checker = checker + plus;
+		}else {
+			checker = checker+i+"";
+		}
+		return checker;
+	}
+
+	private static String checker1(int i, String checker) {
+		if (i%10==3||i%10==6||i%10==9) {
+			checker = checker+"짝";
+		}else {
+			checker = checker+i+"";
+		}
+		return checker;
+	}
+
+	
+}

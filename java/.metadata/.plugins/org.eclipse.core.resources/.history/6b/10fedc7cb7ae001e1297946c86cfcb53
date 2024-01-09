@@ -1,0 +1,30 @@
+package com.test.question;
+
+import java.util.Scanner;
+
+public class Q045 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int count = scan.nextInt();
+		int i = 1;
+		String checker = "";
+		int hundred = i/100;
+		int ten = i/10;
+		while (i <= count) {
+			
+			
+			if ((int)(i%10)==3||(int)(i%10)==6||(int)(i%10)==9) {
+				System.out.print(" 짝");
+				if ((int)(i/10)==3||(int)(i/10)==6||(int)(i/10)==9) {
+					System.out.print("짝");
+					if ((int)(i/100)==3||(int)(i/100)==6||(int)(i/100)==9) {
+						System.out.print("짝 ");
+					}
+				}
+			}else {
+				System.out.printf("%d ",i);
+			}
+			i++;
+		}
+	}
+}

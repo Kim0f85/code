@@ -1,0 +1,61 @@
+package com.test.question;
+
+import java.util.Scanner;
+
+public class Q045 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int count = scan.nextInt();
+
+		String checker = "";
+		String result = "";
+		int firstplace = 10;
+		int secondplace = 100;
+		int thirdplace = 1000;
+
+		for (int i = 1; i < count; i++) {
+			if (i < 1000) {
+				if (tens(i, firstplace) == 1) {
+					if (tens(i, firstplace) + hundreds(i, secondplace) == 2) {
+						if (tens(i, firstplace) + hundreds(i, secondplace) + thousands(i, thirdplace) == 3) {
+							result = result + "짝짝짝 ";
+						} else {
+							result = result + "짝짝 ";
+						}
+					} else {
+						result = result + "짝 ";
+					}
+				}else {
+					result = result + i +" ";
+				}
+			}
+		}
+		System.out.print(result);
+
+	}
+
+	public static int thousands(int i, int thirdplace) {
+		if (i % thirdplace == 3 || i % thirdplace == 6 || i % thirdplace == 9) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+
+	public static int hundreds(int i, int secondplace) {
+		if (i % secondplace == 3 || i % secondplace == 6 || i % secondplace == 9) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+
+	public static int tens(int i, int firstplace) {
+		if (i % firstplace == 3 || i % firstplace == 6 || i % firstplace == 9) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+
+}

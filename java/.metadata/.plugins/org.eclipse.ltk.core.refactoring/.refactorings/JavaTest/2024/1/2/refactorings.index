@@ -13,3 +13,5 @@
 1704703526702	Copy compilation unit
 1704703537569	Copy compilation unit
 1704761028645	Extract method 'printCalendar'
+1704769701529	Extract method 'printArray'
+1704775978182	Extract method 'getResult'

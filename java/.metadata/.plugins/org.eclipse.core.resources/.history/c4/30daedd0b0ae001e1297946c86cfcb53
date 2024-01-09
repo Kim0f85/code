@@ -1,0 +1,22 @@
+package com.test.question;
+
+import java.util.Scanner;
+
+public class Q044 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int result = 0;
+		do {
+			System.out.print("숫자: ");
+			int input = scan.nextInt();
+			if (input%2==0) {
+				result+=input;
+				System.out.printf("+%d ",result);
+			}else {
+				result-=input;
+				System.out.printf("-%d ",result);
+			}
+		}while(result<=100);
+		
+	}
+}

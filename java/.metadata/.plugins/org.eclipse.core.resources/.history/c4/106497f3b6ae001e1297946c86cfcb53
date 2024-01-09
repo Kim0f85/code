@@ -1,0 +1,22 @@
+package com.test.question;
+
+import java.util.Scanner;
+
+public class Q045 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int count = scan.nextInt();
+		int i = 0;
+		String checker = "";
+		while (i < count) {
+			i++;
+			checker = i+"";
+			if (checker.equals("3")||checker.equals("6")||checker.equals("9")) {
+				System.out.print("짝");
+			}else {
+				System.out.print(i);
+			}
+			
+		}
+	}
+}
