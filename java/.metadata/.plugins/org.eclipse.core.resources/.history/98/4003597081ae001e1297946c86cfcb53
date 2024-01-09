@@ -18,7 +18,7 @@ public class Q042 {
 		
 		
 		
-		System.out.printf("%d년 %d월 %d일은 %,d일째 되는 날이고 화요일입니다.",year,month,day,yearcheck(year)+monthdaycheck(year, month, day));
+		System.out.printf("%d년 %d월 %d일은 %d일째 되는 날이고 화요일입니다.",year,month,day,yearcheck(year)+monthdaycheck(year, month, day));
 
 	}
 

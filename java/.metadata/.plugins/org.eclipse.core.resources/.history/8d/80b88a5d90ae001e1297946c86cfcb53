@@ -1,0 +1,37 @@
+package com.test.java;
+
+public class Ex27_Array {
+	public static void main(String[] args) {
+		//Ex27_Array.java
+		//- 자료구조 > 데이터 저장하는 물리적인 구조 
+		//- 데이터의 집합 > 변수들을 모아놓은 집합 
+		//- 같은 자료형을 저장하는 데이터의 집합 
+		
+		m1();
+		
+		
+	}//main
+
+	private static void m1() {
+		
+		//요구사항] 학생 3명 > 국어 점수 > 총점, 평균 
+		int kor1;
+		int kor2;
+		int kor3; 
+		//+ 297 추가 선언
+		
+		kor1 = 100;
+		kor2 = 90;
+		kor3 = 80;
+		
+		int total = kor1+kor2+kor3;
+		double avg= total/3.0;
+		
+		System.out.printf("총점: %d점, 평균: %.1f점\n",total,avg);
+		
+		
+		
+		
+		
+	}
+}
