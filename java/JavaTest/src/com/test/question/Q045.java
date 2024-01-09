@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Q045 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		System.out.print("최대 숫자: ");
 		int count = scan.nextInt();
 
 		String checker = "";
@@ -15,15 +16,29 @@ public class Q045 {
 
 		for (int i = 1; i <= count; i++) {
 			if (i < 10) {
-				if(tens(i, firstplace)==1) {
+				if (tens(i, firstplace) == 1) {
 					result = result + "짝 ";
 				} else {
-					result = result + i +" ";
+					result = result + i + " ";
 				}
 			} else if (i < 100) {
-
+				if (tens(i, firstplace) + hundreds(i, secondplace) == 2) {
+					result = result + "짝짝 ";
+				} else if (tens(i, firstplace) + hundreds(i, secondplace) == 1) {
+					result = result + "짝 ";
+				} else {
+					result = result + i + " ";
+				}
 			} else if (i < 1000) {
-
+				if (tens(i, firstplace) + hundreds(i, secondplace) + thousands(i, thirdplace) == 3) {
+					result = result + "짝짝짝 ";
+				} else if (tens(i, firstplace) + hundreds(i, secondplace) + thousands(i, thirdplace) == 2) {
+					result = result + "짝짝 ";
+				}else if(tens(i, firstplace) + hundreds(i, secondplace) + thousands(i, thirdplace) == 1) {
+					result = result + "짝 ";
+				}else {
+					result = result + i + " ";
+				}
 			}
 
 		}
