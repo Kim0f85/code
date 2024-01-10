@@ -28,7 +28,7 @@ public class Ex29_String {
 		//m12();
 		//m13();
 		//m14();
-		//m15();
+		m15();
 	}
 
 	private static void m15() {
@@ -37,7 +37,6 @@ public class Ex29_String {
 		
 		String txt = "홍길동,아무개,하하하,호호호,후후후";
 		
-		//정규 표현식 구분자 사용시 escape 추가 (\\.)(\\|)
 		String []list = txt.split(",");
 		
 		for(int i=0; i<list.length; i++) {

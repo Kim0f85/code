@@ -1,6 +1,6 @@
 package com.test.question;
 
-
+import java.util.Scanner;
 
 public class Q055 {
 	public static void main(String[] args) {
@@ -8,6 +8,7 @@ public class Q055 {
 		int input = 100;
 		int output = 0;
 		String s1 = "";
+		
 
 		for (int i = 1; i <= input; i++) {
 			output = 0;
@@ -17,11 +18,11 @@ public class Q055 {
 
 				if (i % j == 0 && output <= i) {
 					output += j;
-					s1 = s1 + j + ",";
-				}
+					s1 = s1+j+",";
+				} 
 			}
 			if (output == i) {
-				System.out.printf("%d = [%s]\n", output, s1);
+				System.out.printf("%d = [%s]\n",output,s1);
 			}
 		}
 
