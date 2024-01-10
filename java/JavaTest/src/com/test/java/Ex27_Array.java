@@ -2,7 +2,9 @@ package com.test.java;
 
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Iterator;
 
+import javax.swing.JMenu;
 import javax.xml.stream.events.Namespace;
 
 public class Ex27_Array {
@@ -23,24 +25,242 @@ public class Ex27_Array {
 		// m9();
 		// m10();
 		// m11();
-		//m12();
-		m13();
+		// m12();
+		// m13();
+		// m14();
+		// m15();
+
+		//m16();
+		//m17();
+		//m18();
+		//m19();
+		m20();
 		
+
 	}// main
 
-	private static void m13() {
-		int[]nums = {5,3,1,4,2};
-		String[] names = {"홍길동","아무개","테스트","유재석","강아지","고양이","도깨비","박명수","조세호","병아리"};
+	private static void m20() {
 		
-		//quick sort
+		int[][] nums = new int[5][5];
+		
+		int n = 0;
+		
+		for(int i =0; i<5 ; i++) {
+			for (int j=0; j<5;j++) {
+				nums[i][j] =n;
+				n++;
+			}
+		}
+		
+		for (int i = 0; i < 5; i++) {
+			for (int j=0 ; j<5 ; j++) {
+				System.out.printf("%d",nums[j]);
+			}
+		}
+		
+	}
+
+	private static void m19() {
+		//******* 배열의 길이는 불변이다.
+		//- 한번 만들어진 배열의 방은 더늘리거나 삭제할 수 없다.
+		
+		//int [] kor = new int [300];// 정적
+		
+		int length = 3;
+		
+		int[] kor = new int[length]; //동적 
+		
+	}
+
+	private static void m18() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void m17() {
+		//초기화 리스트 
+		
+		int[]nums1 = {10,20,30};
+		int[][] nums2 = 
+			{
+					{10,20,30},
+					{40,50,60}
+			};
+		int[][][] nums3 =
+			{
+					{
+						{10,20,30},
+						{40,50,60}
+						},
+					{
+						{10,20,30},
+						{40,50,60}
+					},
+					{
+						{10,20,30},
+						{40,50,60}
+					}
+			};
+		
+		//jaggerd array, 비정형 배열, 불규칙 
+		int [][] nums4 = new int[3][4];
+		
+		int[][] nums5 = 
+			{
+					{10,20,30},
+					{40,50},
+					{60,70,80,90}
+			};
+		
+		//jaggered Array 탐색
+		for (int i = 0 ; i<nums5.length ; i++) {
+			for (int j = 0; j<nums5[i].length ; j++) {
+				System.out.printf("%5d", nums5[i][j]);
+			}
+			System.out.println();
+		}
+		
+	}
+
+	private static void m16() {
+		// 배열의 차원
+		// - 1차원 배열, 2차원 배열, 3차원 배열..
+
+		// 1차원 배열
+		int[] nums = new int[3];
+		nums[0] = 10;
+		nums[1] = 20;
+		nums[2] = 30;
+
+		System.out.println(Arrays.toString(nums));
+
+		// 2차원 배열
+		int[][] nums2 = new int[2][3];
+		
+		nums2[0][0] = 10;
+		nums2[0][1] = 20;
+		nums2[0][2] = 30;
+		
+		nums2[1][0] = 40;
+		nums2[1][1] = 50;
+		nums2[1][2] = 60;
+		 
+		System.out.println(Arrays.deepToString(nums2));
+		
+		//nums2 자료형? > int[][]
+		//nums2[0] 자료형? > int[]
+		//nums2[0][0] 자료형? > int
+		
+		nums2[0][1] = 20;
+		
+		System.out.println(nums2.length);
+		System.out.println(nums2[0].length);
+		System.out.println(nums2[0][1]);
+		
+		//2차원 배열 탐색 
+		for(int i = 0 ; i<2;i++) {
+			for (int j = 0 ; j<3;j++) {
+				System.out.print(nums2[i][j]+"\t");
+			}
+			System.out.println();
+		}
+		
+		//3차원 배열 
+		int [][][] nums3 = new int [2][2][3];
+		
+		nums3[0][0][0] = 10;
+		nums3[0][0][1] = 20;
+		nums3[0][0][2] = 30;
+		
+		nums3[0][1][0] = 40;
+		nums3[0][1][1] = 50;
+		nums3[0][1][2] = 60;
+		
+		nums3[1][0][0] = 70;
+		nums3[1][0][1] = 80;
+		nums3[1][0][2] = 90;
+		
+		nums3[1][1][0] = 100;
+		nums3[1][1][1] = 110;
+		nums3[1][1][2] = 120;
+		
+		for(int i=0; i<nums3.length;i++) {
+			for(int j=0; j<nums3[0].length;j++) {
+				for(int k=0; k<nums3[0][0].length;k++) {
+					System.out.printf("%5d",nums3[i][j][k]);
+				}
+				System.out.println();
+			}
+			System.out.println();
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	private static void m15() {
+		// 배열 조작
+		// - 삽입, 삭제
+		// - Left Shift > 왼쪽으로 한칸씩 이동했다.
+		// - *** 삭제 이후의 요소들이 인데스가 변경된다
+		int[] nums = { 1, 2, 3, 4, 5 };
+		int index = 1;
+
+		for (int i = index; i <= nums.length - 2; i++) {
+			nums[i] = nums[i + 1];
+		}
+		nums[nums.length - 1] = 0;
+
+		System.out.println(Arrays.toString(nums));
+
+	}
+
+	private static void m14() {
+
+		// 배열 조작
+		// - 사입, 삭제
+		// - 비용 발생
+
+		// 배열 요소 삽입(insertion)
+		// - Right Shift > 오른쪽으로 한칸씩 이동했다.
+		// - *** 삽입 이후의 요소들이 인덱스가 변경된다.
+		int[] nums = { 1, 2, 3, 4, 5 };
+		int index = 1;
+		int value = 9;
+
+		System.out.println("nums[0] = " + nums[0]);
+		System.out.println("nums[3] = " + nums[3]);
+
+		System.out.println(Arrays.toString(nums));
+
+		for (int i = nums.length - 2; i >= index; i--) {
+			// System.out.println(i);
+			nums[i + 1] = nums[i];
+			System.out.println(Arrays.toString(nums));
+		}
+		nums[index] = value;
+		System.out.println(Arrays.toString(nums));
+
+		System.out.println("nums[0] = " + nums[0]);
+		System.out.println("nums[3] = " + nums[3]);
+
+	}
+
+	private static void m13() {
+		int[] nums = { 5, 3, 1, 4, 2 };
+		String[] names = { "홍길동", "아무개", "테스트", "유재석", "강아지", "고양이", "도깨비", "박명수", "조세호", "병아리" };
+
+		// quick sort
 		Arrays.sort(nums);
 		System.out.println(Arrays.toString(nums));
-		
+
 		Arrays.sort(names);
 		System.out.println(Arrays.toString(names));
-		
-		
-		
+
 	}
 
 	private static void m12() {
@@ -64,57 +284,53 @@ public class Ex27_Array {
 
 		// 버블 정렬 + swap
 		// swap > 두 공간의 데이터를 서로 바꾸는 작업
-		
+
 		int a = 10;
-		int b = 5; 
+		int b = 5;
 		int temp;
-		
+
 		temp = a;
 		a = b;
 		b = temp;
-		
-		System.out.println("a: "+a);
-		System.out.println("b: "+b);
-		
-		int[]nums = {5,3,1,4,2};
+
+		System.out.println("a: " + a);
+		System.out.println("b: " + b);
+
+		int[] nums = { 5, 3, 1, 4, 2 };
 		System.out.println(Arrays.toString(nums));
-		
-		for(int i=0; i<nums.length-1;i++) {//사이클 (0,1,2,3)
-			
-			for(int j=0; j<nums.length-1-i;j++) {
-				//오름차순 
-				if(nums[j]>nums[j+1]) {
+
+		for (int i = 0; i < nums.length - 1; i++) {// 사이클 (0,1,2,3)
+
+			for (int j = 0; j < nums.length - 1 - i; j++) {
+				// 오름차순
+				if (nums[j] > nums[j + 1]) {
 					temp = nums[j];
-					nums[j]=nums[j+1];
-					nums[j+1] = temp;
+					nums[j] = nums[j + 1];
+					nums[j + 1] = temp;
 				}
-				
+
 			}
-			
+
 		}
 		System.out.println(Arrays.toString(nums));
-		
 
-		
 		String name1 = "홍길동";
 		String name2 = "아무개";
 		System.out.println(name1.compareTo(name2));
 
-		
-		String[] name = {"홍길동","아무개","테스트","유재석","강아지","고양이","도깨비","박명수","조세호","병아리"};
-		
-		for(int i =0;i<name.length-1;i++) {
-			for (int j =0; j<name.length-1-i;j++) {
-				if (name[j].compareTo(name[j+1])>0){
+		String[] name = { "홍길동", "아무개", "테스트", "유재석", "강아지", "고양이", "도깨비", "박명수", "조세호", "병아리" };
+
+		for (int i = 0; i < name.length - 1; i++) {
+			for (int j = 0; j < name.length - 1 - i; j++) {
+				if (name[j].compareTo(name[j + 1]) > 0) {
 					String temp2 = name[j];
-					name[j] = name[j+1];
-					name[j+1]=temp2;
+					name[j] = name[j + 1];
+					name[j + 1] = temp2;
 				}
 			}
 		}
-		
-	}	
-		
+
+	}
 
 	private static void m11() {
 		// 배열 초기화 리스트

@@ -20,10 +20,6 @@ public class Q051 {
 				// System.out.print(stars);
 				result = result + stars;
 			}
-			for (int j = 0; j < row-i ; j++) {
-
-				result = result + space;
-			}
 			System.out.printf("%s", result);
 			System.out.println();
 

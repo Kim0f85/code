@@ -1,0 +1,38 @@
+package com.test.java;
+
+public class Ex29_String {
+	public static void main(String[] args) {
+		
+		
+		
+		//Ex29_String.java
+		/*
+			
+			문자열, string 
+			- string 클래스에서 문자열 조작에 관련된 기능 제공 
+			
+		
+		*/
+		m1();
+	}
+
+	private static void m1() {
+		//문자열 생성
+		//1. 리터럴 
+		//2. 객체 생성 
+		
+		String str1 = "홍길동";
+		String str2 = new String("홍길동");
+		
+		//문자열 길이 
+		//- int length()
+
+		String txt = "홍길동";
+		System.out.println(txt.length());
+		System.out.println("자바".length());
+		System.out.println("ABC한글123!@#".length());
+		
+				
+		
+	}
+}
