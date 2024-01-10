@@ -1,0 +1,29 @@
+package com.test.question;
+
+public class Q060 {
+	public static void main(String[] args) {
+		
+		int addition1 = 0;
+		int addition2 = 1;
+		int result =0;
+		System.out.printf("1 + ");
+		while (result <100) {
+			if(result<100) {
+				if(result<100) {
+					result = addition1 +addition2;
+					addition1 = result;
+					System.out.printf("%d + ",result);
+				}
+				
+				if(result<100) {
+					result = addition2 + addition1;
+					addition2= result;
+					System.out.printf("%d + ",result);
+				}
+			}
+			
+			
+		}
+		
+	}
+}

@@ -1,0 +1,14 @@
+package com.test.question;
+
+public class Q059 {
+	public static void main(String[] args) {
+		int count = 0; 
+		int addition1 = 0;
+		int addition2 = 1;
+		int num1 = 0;
+		while (addition2 <100) {
+			 addition1 = addition1 + addition2 ;
+			 System.out.println(addition1);
+		}
+	}
+}
