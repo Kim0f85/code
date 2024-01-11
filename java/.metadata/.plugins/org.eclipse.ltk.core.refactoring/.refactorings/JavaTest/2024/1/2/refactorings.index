@@ -27,3 +27,8 @@
 1704887367777	Copy compilation unit
 1704932684184	Delete element
 1704944873196	Encapsulate field 'author'
+1704953421541	Encapsulate field 'size'
+1704953683031	Encapsulate field 'size'
+1704953716470	Encapsulate field 'price'
+1704954521893	Encapsulate field 'superior'
+1704956963670	Encapsulate field 'nick'

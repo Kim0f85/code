@@ -1,0 +1,19 @@
+package com.test.java.obj;
+
+public class Monitor {
+	private String model;
+	private int size;
+	private int price;
+	private String color;
+	
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+	
+	public int getSize() {
+		return size;
+	}
+}

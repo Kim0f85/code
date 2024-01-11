@@ -1,0 +1,33 @@
+package com.test.java.obj;
+
+public class Ex35_Class {
+	public static void main(String[] args) {
+		//Ex35_Class.java
+		Employee e1 = new Employee();
+		
+		e1.setName("홍길동");
+		e1.setDepartment("영업부");
+		
+		Employee e2 = new Employee();
+		e2.setName("아무개");
+		e2.setDepartment("영업부");
+		e2.setSuperior(e1);
+		
+		System.out.println(e2.getSuperior().getName());
+		
+		Parent father = new Parent();
+		father.setName("홍길동");
+		father.setAge(40);
+		
+		Parent mother = new Parent();
+		mother.setName("홍길동");
+		mother.setAge(35);
+		
+		Child child = new Child();
+		child.setName("홍무개");
+		child.setAge(12);
+		child.setFather(father);//관계
+		child.setMother(mother);//관계
+		
+	}
+}
