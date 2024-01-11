@@ -1,5 +1,7 @@
 package com.test.question;
 
+import javax.naming.spi.DirStateFactory.Result;
+
 public class Q063 {
 	public static void main(String[] args) {
 		int[] list = new int[4];
@@ -14,7 +16,16 @@ public class Q063 {
 	}
 
 	private static String dump(int[] list) {
-		// TODO Auto-generated method stub
-		return null;
+		String result = "";
+		for (int i =1; i<4;i++) {
+			if(i==list.length-1) {
+				result+=list[i];
+			}else {
+				result+=list[i]+",";
+			}
+			
+		}
+		result = "[ "+result+" ]";
+		return result;
 	}
 }
