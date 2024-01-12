@@ -1,0 +1,31 @@
+package com.test.question;
+
+import java.util.Arrays;
+
+public class Q074 {
+	public static void main(String[] args) {
+		int [][]nums = new int[5][5];
+		int num = 0;
+		for (int i = 0; i<5;i++) {
+			int j =0;
+			int count= 0;
+			if (i<2) {
+				for(int k = 0 ; k<i+1;k++) {
+					nums[i][k]=0;
+					count++;
+				}
+			}
+			for(j = count; j<5;j++) {
+				nums[i][j]=++num;
+				System.out.printf("%2d ",nums[i][j]);
+			}
+				
+			System.out.println();	
+				//nums[i][j]=++num;
+				//System.out.printf("%2d ",nums[i][j]);
+			}
+			
+		}
+		
+	}
+

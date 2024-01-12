@@ -1,0 +1,43 @@
+package com.test.java.obj._static;
+
+public class Ex38_Static {
+	public static void main(String[] args) {
+		
+		//Ex38_static.java
+		
+		//요구사항] 
+		//1. 펜을 생산하시오.
+		//2. 생산된 펜의 개수를 세시오;
+		
+		//Case 1. 
+		int count = 0; //누적 변수 
+		
+		Pen p1 = new Pen("MonAmi", "Black");
+		count++;
+		
+		Pen p2 = new Pen("MonAmi", "Black");
+		count++;
+		
+		Pen p3 = new Pen("MonAmi", "Black");
+		count++;
+		
+		System.out.println("볼챈 개수: "+count);
+		
+	}
+}
+
+class Pen{
+	
+	private String model;
+	private String color;
+	
+	public Pen(String model, String color) {
+		this.model = model;
+		this.color = color;
+	}
+	
+	public String dump() {
+		return String.format("[model: %s, colorL %s]", this.model,this.color);
+	}
+	
+}
