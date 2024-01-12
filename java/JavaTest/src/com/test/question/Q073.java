@@ -13,7 +13,7 @@ public class Q073 {
 				System.out.printf("%2d ",nums[i][j]);
 			}
 			for(int k = 0; k<5-(5-i);k++) {
-				nums[i][j]=0;
+				//nums[i][j]=0;
 				
 				System.out.printf("%2d ",nums[i][j]);
 				j++;

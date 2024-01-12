@@ -17,12 +17,17 @@ public class Ex41_Overriding {
 		OverridingParent hong = new OverridingParent();
 		
 		hong.name = "홍길동";
+		System.out.println();
+		//void com.test.java.obj.inheritance.OverridingParent.hello()
+		//void com.test.java.obj.inheritance.OverridingChild.hello()
 		hong.hello();
 		
 		OverridingChild jhong = new OverridingChild();
 		
 		jhong.name = "홍철수";
+		//void com.test.java.obj.inheritance.OverridingChild.hello()
 		jhong.hello();
+//		jhong.hi();
 		
 	}
 }
@@ -37,5 +42,14 @@ class OverridingParent {
 }
 
 class OverridingChild extends OverridingParent {
+	
+//	public void hi() {
+//		System.out.printf("하이~ 방가~ %s야~\n",this.name);
+//	}
+//	public String name;
+	public void hello() {
+		System.out.printf("하이~ 방가~ %s야~\n",this.name);
+	}
+
 	
 }

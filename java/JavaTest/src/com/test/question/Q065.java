@@ -16,7 +16,7 @@ public class Q065 {
 		String auto = "";
 		String autorange = "";
 		for (int i = 0; i < input.length; i++) {
-			int random = (int) ((Math.random() * (20 - 1)) + 1);
+			int random = (int) ((Math.random() * 20) + 1);
 			input[i] = random;
 			if (i==input.length-1) {
 				auto += input[i];

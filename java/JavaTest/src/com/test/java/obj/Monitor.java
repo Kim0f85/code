@@ -29,6 +29,11 @@ public class Monitor {
 			return 3;
 		}
 	}
+	@Override
+	public String toString() {
+		return "Monitor [model=" + model + ", size=" + size + ", price=" + price + ", color=" + color + "]";
+	}
+	
 	
 	
 }

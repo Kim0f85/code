@@ -14,7 +14,7 @@ public class Q074 {
 				for(k = 0 ; k<i+2;) {
 					nums[i][k]=0;
 					System.out.printf("%2d ",nums[i][j]);
-					count--;
+					k--;
 				}
 			}
 			for(j = k; j<5;j++) {
