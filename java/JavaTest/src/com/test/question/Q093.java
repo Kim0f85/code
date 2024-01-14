@@ -83,22 +83,51 @@ class Note {
 	}
 
 	public String info() {
+		int cost = 500; 
+		
+		cost += (page-10)*10;
 		String thick ="";
 		if (page>=10&&page<=50) {
-			thick = "얇다";
+			thick = "얇은";
 		}else if(page>= 51&&page<=100) {
 			thick ="보통";
 		}else if (page>=101&&page<=200) {
-			thick = "두껍다";
+			thick = "두꺼운";
+		}
+		
+		if(color.equals("검정색")) {
+			cost += 100;
+		}else {
+			cost+= 200;
+		}
+		
+		if (size.contains("A")) {
+			if(size.contains("3")) {
+				cost += 400;
+			}else {
+				cost += 200;
+			}
+		}else {
+			if(size.contains("3")) {
+				cost+=500;
+			}else if(size.contains("4")) {
+				cost+=300;
+			}else if(size.contains("5")){
+				cost+=100;
+			}
+		}
+		
+		if (size.equals("A5")&&page==10&&color.equals("흰색")) {
+			cost =500;
 		}
 		
 		String temp = "";
 		if (this.owner==null) {
-			temp = "주인 없는 노트";
+			temp = "주인 없는 노트\n";
 		}else {
-			temp += "소유자 : " + owner + "\r\n";
-			temp += "특성 : " this.color+ thick + "\r\n";
-			temp += "가격 : " + price + "\r\n";
+			temp = String.format("소유자 : %s\n특성: %s %s %s 노트\n가격: %,d원\n", owner,color,thick,size,cost);
+					
+			
 		}
 		String fin = "";
 		
@@ -106,6 +135,8 @@ class Note {
 		fin += temp;
 		fin += "■■■■■■■■■■■■■■■■■■■■■■\r\n";
 		
-		System.out.println(fin);
+		//System.out.println(fin);
+		
+		return fin;
 	}
 }
