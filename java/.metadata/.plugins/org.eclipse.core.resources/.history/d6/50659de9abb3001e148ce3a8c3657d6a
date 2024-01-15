@@ -1,0 +1,29 @@
+package com.test.question;
+
+import java.util.Scanner;
+
+public class Q088 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("입력: ");
+		String input = scan.nextLine();
+		boolean check = false;
+		
+		do {
+			if(input.contains("바보")) {
+				input.replace("바보", "**");
+				//System.out.println(input);
+			}else if(input.contains("멍청이")) {
+				input.replace("멍청이", "***");
+				//System.out.println(input);
+			}else if(!input.contains("바보")||!input.contains("멍청이")) {
+				check = true;
+			}
+			
+		}while(check = false);
+		
+		System.out.println(input);
+		
+	}
+	
+}

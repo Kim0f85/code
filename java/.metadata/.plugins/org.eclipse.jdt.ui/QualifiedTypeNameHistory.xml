@@ -19,7 +19,6 @@
     <fullyQualifiedTypeName name="com.test.java.obj.Parent"/>
     <fullyQualifiedTypeName name="com.test.java.obj.Child"/>
     <fullyQualifiedTypeName name="com.test.java.obj.Person"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.test.question.Note"/>
     <fullyQualifiedTypeName name="javax.xml.crypto.dsig.spec.C14NMethodParameterSpec"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
@@ -27,7 +26,6 @@
     <fullyQualifiedTypeName name="java.util.IllegalFormatCodePointException"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="com.test.java.obj.constructor.Mouse"/>
-    <fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
     <fullyQualifiedTypeName name="com.test.java.bbb.Yellow"/>
     <fullyQualifiedTypeName name="com.test.java.aaa.Yellow"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.resources.compiler"/>
@@ -56,8 +54,10 @@
     <fullyQualifiedTypeName name="com.test.java.obj.Employee"/>
     <fullyQualifiedTypeName name="com.test.java.obj.AAA"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.spi.LocaleNameProvider"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

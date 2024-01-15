@@ -1,0 +1,30 @@
+package com.test.question;
+
+import java.util.Scanner;
+
+public class Q091 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("입력: ");
+		String input = scan.nextLine();
+		String oper = "";
+		
+		if(input.contains("+")) {
+			oper = "+";
+		}else if(input.contains("-")) {
+			oper = "-";
+		}else if(input.contains("*")) {
+			oper = "*";
+		}else if(input.contains("/")) {
+			oper = "/";
+		}else if(input.contains("%")) {
+			oper = "%";
+		}else {
+			System.out.println("연산식이 없습니다");
+		}
+		
+		input = input.replaceAll(" ","");
+		
+		System.out.println(input);
+	}
+}
