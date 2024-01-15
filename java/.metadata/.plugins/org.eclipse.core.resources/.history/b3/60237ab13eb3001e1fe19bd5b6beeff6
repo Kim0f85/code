@@ -1,0 +1,18 @@
+package com.test.java;
+
+public class Ex44_package {
+	public static void main(String[] args) {
+		//Ex44_package.java
+		/*
+			패키지, package
+			- 클래스를 저장하기 위한 폴더
+			- 많은 클래스들을 체계적으로 관리하기 위한 용도 
+			- 파일/폴더: C:\aaa\bbb\ccc
+			- 패키지: aaa.bbb.ccc
+			- . : 멤버 접근 연산자
+		
+		
+		*/
+		
+	}
+}

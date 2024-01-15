@@ -29,19 +29,19 @@ public class Ex33_Access {
 //		b1.b=200;
 //		b1.check();
 		
-		Book b1 = new Book();
-		
-		b1.title = "자바 개발서";
-		b1.price = 25000;
-		
-		System.out.println(b1.title);
-		System.out.println(b1.price);
-		System.out.println(b1.bbb());
-		
-		Book b2 = new Book();
-		
-		b2.title="코딩 테스트 문제집";
-		b2.price = 2000000000;
-		b2.se
+//		Book b1 = new Book();
+//		
+//		b1.title = "자바 개발서";
+//		b1.price = 25000;
+//		
+//		System.out.println(b1.title);
+//		System.out.println(b1.price);
+//		System.out.println(b1.bbb());
+//		
+//		Book b2 = new Book();
+//		
+//		b2.title="코딩 테스트 문제집";
+//		b2.price = 2000000000;
+//		b2.se
 	}
 }

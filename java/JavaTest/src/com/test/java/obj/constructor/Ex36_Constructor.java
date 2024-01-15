@@ -109,3 +109,22 @@ class Cup{
 	}
 	
 }
+class Mouse{
+	private int a;
+	private int b;
+	private static int c;
+	
+	//객체 생성자 > 객체 내부를 초기화
+	public Mouse(int a,int b) {
+		this.a = a;
+		this.b = b;
+	}
+	
+	//정적 생성자 > 정적 멤버만을 초기화 
+	//- 매개변수 없음
+	//- 정적 생성자는 직접 호출이 불가능 
+	//- 자바가 호출한다. 
+	static {
+		Mouse.c=0;
+	}
+}

@@ -1,0 +1,29 @@
+package com.test.java.obj;
+
+public class Ex47_Interface {
+	public static void main(String[] args) {
+		
+		//Ex47_Interface.java
+		/*
+			
+			인터페이스, Interface
+			- 클래스의 일종 
+			- 자료형 
+		
+		
+		*/
+		
+	}
+}
+
+interface Phone {
+	//인터페이스 멤버 선언
+	
+	//인터페이스느느 구현된 멤버를 선언할 수 없다. 
+	public int a;
+	public int b;
+	
+	public void ccc() {
+		
+	}
+}

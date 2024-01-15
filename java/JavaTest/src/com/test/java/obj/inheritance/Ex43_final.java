@@ -80,13 +80,13 @@ final class FinalParent{
 
  
 
-class FinalChild extends FinalParent{
-
-	@Override
-	public String test() {
-		// TODO Auto-generated method stub
-		return super.test();
-	}
-	
-}
+//class FinalChild extends FinalParent{
+//
+//	@Override
+//	public String test() {
+//		// TODO Auto-generated method stub
+//		return super.test();
+//	}
+//	
+//}
 
