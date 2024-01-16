@@ -1,0 +1,42 @@
+package com.test.java.obj;
+
+public class Ex51_Generic {
+	public static void main(String[] args) {
+		//Ex51_Generic
+		
+		//제네릭, generic
+		//1. 제네릭 클래스 > 0
+		//2. 제네릭 메서드 
+		
+		//요구사항] 클래스 설계 중...
+		//1. 멤버 변수 > int 1개 
+		//2. 멤버 변수를 중심으로 여러가지 행동을 하는 메서드를 선언
+		
+		WrapperInt n1 = new WrapperInt(100);
+		System.out.println(n1);
+		
+		
+	}// main
+}
+
+class WrapperInt{
+	private int data; //1. 클래스 중심 
+	
+	public int getData() {
+		return data;
+	}
+
+	public void setData(int data) {
+		this.data = data;
+	}
+
+	//2. data 중심 > 메서드 
+	public WrapperInt(int data) {
+		this.data = data;
+	}
+
+	@Override
+	public String toString() {
+		return "WrapperInt [data=" + data + "]";
+	}
+}

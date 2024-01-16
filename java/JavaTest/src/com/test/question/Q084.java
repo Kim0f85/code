@@ -1,11 +1,10 @@
 package com.test.question;
 
-import java.io.ObjectInputStream.GetField;
 
 public class Q084 {
 	public static void main(String[] args) {
 		
-		String content="안녕~ 길동아~ 잘가~ 길동아~";
+		String content="안녕~ 길동아~ 잘가~ 길동아~길동 길동 길동 길동 길동 ";
 		
 		String word = "길동";
 		boolean check = true;

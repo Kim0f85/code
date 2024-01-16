@@ -1,0 +1,71 @@
+package com.test.java.obj;
+
+import com.test.java.obj.WrapperInt.WrapperString;
+
+public class Ex51_Generic {
+	public static void main(String[] args) {
+		// Ex51_Generic
+
+		// 제네릭, generic
+		// 1. 제네릭 클래스 > 0
+		// 2. 제네릭 메서드
+
+		// 요구사항] 클래스 설계 중...
+		// 1. 멤버 변수 > int 1개
+		// 2. 멤버 변수를 중심으로 여러가지 행동을 하는 메서드를 선언
+
+		// 추가사항] string을 중심으로 하는 클래스를 추가 설계
+
+		WrapperInt n1 = new WrapperInt(100);
+		System.out.println(n1);
+		System.out.println(n1.getData() * 2);
+		System.out.println();
+
+		WrapperString s1 = new WrapperString("홍길동");
+		System.out.println(s1);
+
+	}// main
+}
+
+class WrapperInt {
+	private int data; // 1. 클래스 중심
+
+	// 2. data 중심 > 메서드
+	public WrapperInt(int data) {
+		this.data = data;
+	}
+
+	public int getData() {
+		return data;
+	}
+
+	public void setData(int data) {
+		this.data = data;
+	}
+
+	@Override
+	public String toString() {
+		return "[data=" + data + "]";
+	}
+}
+	class WrapperString {
+		private String data; // 1. 클래스 중심
+
+		// 2. data 중심 > 메서드
+		public WrapperString(String data) {
+			this.data = data;
+		}
+
+		public String getData() {
+			return data;
+		}
+
+		public void setData(String data) {
+			this.data = data;
+		}
+
+		@Override
+		public String toString() {
+			return "[data=" + data + "]";
+		}
+	}

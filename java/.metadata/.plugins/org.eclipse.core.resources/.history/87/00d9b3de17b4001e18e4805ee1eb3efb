@@ -1,0 +1,50 @@
+package com.test.java.obj;
+
+import java.util.Scanner;
+
+public class Ex53_Exception {
+	public static void main(String[] args) {
+		
+		//Ex53_Exception.java
+		/*
+		
+			예외, Exception 
+			- 런타임 오류 
+			- 컴파일 발견(X) > 실생중 발견(0)
+			- 개발자 미리 예측 > 사전 조치 
+			
+			예외 처리, Exception Handling 
+			1. 제어문 사용
+			
+			2. 전용처리 구문 > try catch문 
+		
+		
+		*/
+		
+		m1();
+	}
+
+	private static void m1() {
+		//요구사항] 숫자를 입력 받아 처리를 하시오.
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("숫자: ");
+		
+		int num = scan.nextInt();
+		
+		if(num!=0) {
+			//비즈니스 코드 (업무 코드)
+			System.out.printf("100/%d = %d\n",num, 100/num);
+		}else {
+			//예외 처리 코드
+			System.out.println("0을 입력하지 마시오");
+		}
+		
+		try {
+			System.out.printf("100/%d = %d\n",num, 100/num);
+		}catch (Exception e) {
+			System.out.println("0을 입력하지 마시오");
+		}
+		
+	}
+}
