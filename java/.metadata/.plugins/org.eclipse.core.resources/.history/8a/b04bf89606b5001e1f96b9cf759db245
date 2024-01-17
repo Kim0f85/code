@@ -33,13 +33,14 @@ class Refrigerator {
 	int index = 0;
 	public void add(Item item) {
 		
+		
+		
 		this.items[index]=item;
 		index++;
 		System.out.printf("'%s'를 냉장고에 넣었습니다.\n",item.getName());
-		
 	}
+
 	public Item get(String name) {
-		
 		int count = 0 ;
 		for(int i = 0 ; i < this.items.length ; i++) {
 			if(this.items[i].getName().equals(name)) {
@@ -54,6 +55,7 @@ class Refrigerator {
 	private void replace(int count) {
 		for(int i = count ; i < this.items.length-1;i++) {
 			this.items[i]=this.items[i+1];
+			
 		}
 		index--;
 	}
