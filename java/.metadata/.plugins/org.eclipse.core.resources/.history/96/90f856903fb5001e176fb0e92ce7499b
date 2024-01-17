@@ -1,0 +1,72 @@
+package com.test.question;
+
+public class Q098 {
+	public static void main(String[] args) {
+		//학생 1
+		Student s1 = new Student(); //기본 생성자 호출
+		System.out.println(s1.info());
+
+		//학생 2
+		Student s2= new Student("홍길동", 13); //오버로딩 생성자 호출
+		System.out.println(s2.info());
+
+		//학생 3
+		Student s3= new Student(3, 10, 30); //오버로딩 생성자 호출
+		System.out.println(s3.info());
+
+		//학생 4
+		Student s4= new Student("아무개", 12, 1, 5, 11); //오버로딩 생성자 호출
+		System.out.println(s4.info());
+	}
+}
+
+class Student{
+	private String name;
+	private int age ;
+	private int grade;
+	private int classNumber;
+	private int number;
+	
+	public void split() {
+		for(int i = 0 ; i < )
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public int getGrade() {
+		return grade;
+	}
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+	public int getClassNumber() {
+		return classNumber;
+	}
+	public void setClassNumber(int classNumber) {
+		this.classNumber = classNumber;
+	}
+	public int getNumber() {
+		return number;
+	}
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	
+	public String info() {
+		String result = "";
+		
+		result = 
+		
+		return result;
+	}
+}

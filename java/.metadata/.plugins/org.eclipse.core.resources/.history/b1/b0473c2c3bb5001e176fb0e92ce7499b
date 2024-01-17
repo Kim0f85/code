@@ -54,7 +54,8 @@ public class Ex56_HashMap {
 		for(String item : keys) {
 			System.out.printf("map.get(%s) = %s\n",item,map.get(item));
 		}
-			
+		
+		
 	}
 
 	private static void m2() {
