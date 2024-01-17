@@ -48,7 +48,115 @@ public class Ex54_ArrayList {
 		//m3();
 		//m4();
 		//m5();
-		m6();
+		//m6();
+		//m7();
+		m8();
+	}
+
+	private static void m8() {
+		//배열 생성
+		MyArrayList list = new MyArrayList();
+		
+		System.out.println(list);
+		//추가
+		list.add("홍길동");
+		list.add("아무개");
+		list.add("하하하");
+		//list.add("호호호");
+		System.out.println(list);
+//		list.add("후후후");
+//		list.add("헤헤헤");
+//		list.add("가가가");
+//		list.add("나나나");
+//		list.add("다다다");
+		
+//		
+//		System.out.println(list);
+//
+//		//읽기
+		System.out.println(list.get(0));
+		System.out.println(list.get(1));
+		System.out.println(list.get(2));
+		System.out.println(list.get(3));
+//
+//		//개수
+		System.out.println(list.size());
+//
+//		//탐색 + 읽기
+		for (int i=0; i<list.size(); i++) {
+		      System.out.println(list.get(i));
+		}
+//
+//		//수정
+		list.set(0, "우하하");
+		System.out.println(list.get(0));
+//
+//		//삭제
+		list.remove(1);
+		for (int i=0; i<list.size(); i++) {
+		      System.out.println(list.get(i));
+		}
+		
+		list.remove("하하하");
+		
+		
+//
+//		//삽입
+		list.add(1, "호호호");
+		for (int i=0; i<list.size(); i++) {
+		      System.out.println(list.get(i));
+		}
+//
+//		//검색
+		if (list.indexOf("홍길동") > -1) {
+		      System.out.println("홍길동 있음");
+		} else {
+		      System.out.println("홍길동 없음");
+		}
+		System.out.println();
+		
+		System.out.println(list.lastIndexOf("호호호"));
+//
+		System.out.println(list.indexOf("호호호",2));
+		System.out.println(list.lastIndexOf("호호호",2));
+//
+//		//초기화
+		list.clear();
+		System.out.println(list.size());
+		
+		//trimToSize()
+		list.add("홍길동");
+		list.add("아무개");
+		list.add("강아지");
+		list.add("고양이");
+		list.add("병아리");
+		System.out.println(list);
+		
+		list.trimToSize();
+		
+		MyArrayList list2 = new MyArrayList(100);
+		
+		for(int i = 0 ; i<100 ; i++) {
+			list2.add(i+"");
+		}
+	}
+
+	private static void m7() {
+		ArrayList<Integer> nums = new ArrayList<>();
+		
+		System.out.println(nums.size());
+		
+		nums.add(10);
+		nums.add(10);
+		nums.add(10);
+		nums.add(10);
+		System.out.println(nums.size());
+		
+		for(int i=0; i<1000000 ; i++) {
+			nums.add(10);
+		}
+		System.out.println(nums.size());
+		
 	}
 
 	private static void m6() {

@@ -1,0 +1,26 @@
+package com.test.question;
+
+public class MyArrayList {
+	private String[] list;
+	private int index;
+	
+	public void add(String string) {
+		list = new String[4];
+		
+		for(int i = 0 ; i<this.list.length ; i++) {
+			list[i]= string;
+			index++;
+		}
+		
+	}
+	
+	@Override
+	public String toString() {
+		String temp = "";
+		for(int i = 0 ; i < this.list.length ; i++) {
+			temp+=String.format("%s\r\n", list[i]);
+		}
+		
+		return temp;
+	}
+}

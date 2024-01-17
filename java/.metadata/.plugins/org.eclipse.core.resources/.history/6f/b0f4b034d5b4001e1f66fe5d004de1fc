@@ -1,0 +1,24 @@
+package com.test.java.collection;
+
+public class MyArrayList {
+	private String [] list;
+	private int index;
+	
+	public MyArrayList() {
+		this.list = new String [4];
+		this.index = 0 ; //추가할 방번호 
+	}
+	
+	public boolean add(String s) {
+		
+		//append
+		this.list[this.index] = s;
+		index++;
+		
+		return true;
+	}
+	
+	
+	
+	
+}

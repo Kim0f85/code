@@ -1,0 +1,6 @@
+package com.test.java.collection;
+
+public class MyArrayList {
+	private String [] list;
+	private int index;
+}

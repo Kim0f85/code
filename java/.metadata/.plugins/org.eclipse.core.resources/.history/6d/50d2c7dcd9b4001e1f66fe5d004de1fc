@@ -1,0 +1,6 @@
+package com.test.question;
+
+public class MyArrayList {
+	private String[] list;
+	private int index;
+}
