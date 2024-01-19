@@ -67,27 +67,7 @@ public class Ex61_Sort {
 //				}
 		
 				//지역순(city)
-				//return o1.getCity().compareTo(o2.getCity());
-				
-				int city1 = -1;//첫번째 사람(USer o1)의 지역
-				int city2 = -1;//두번째 사람(USer o2)의 지역
-				
-				city1 = getCityNumber(o1.getCity());
-				
-			}
-
-			private int getCityNumber(String city) {
-				if(city.equals("서울")) {
-					return 1;
-				}else if(city.equals("인천")) {
-					return 2;
-				}else if(city.equals("광주")) {
-					return 3;
-				}else if(city.equals("광주")) {
-					return 4; 
-				}else {
-					return 5;
-				}
+				return o1.getCity().compareTo(o2.getCity());
 				
 			}
 			
