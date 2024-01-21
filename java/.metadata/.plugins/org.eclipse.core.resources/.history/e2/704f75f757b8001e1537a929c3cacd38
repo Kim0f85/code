@@ -1,0 +1,7 @@
+package com.test.question;
+
+public class Q117 {
+	public static void main(String[] args) {
+		String path = "C:\\class\\code\\java\\파일 디렉토리 문제\\폴더 삭제\\delete";
+	}
+}

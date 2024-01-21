@@ -1,0 +1,63 @@
+package com.test.question;
+
+import java.io.File;
+import java.io.ObjectInputStream.GetField;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+import javax.naming.ldap.SortControl;
+
+public class Q114 {
+	public static void main(String[] args) {
+		String path = "C:\\class\\code\\java\\파일 디렉토리 문제\\확장자별 카운트";
+
+		File dir = new File(path);
+		ArrayList<String>extension = new ArrayList<String>();
+		
+		File[] dirfiFiles = dir.listFiles();
+		int count = 0;
+		for (File itemFile : dirfiFiles) {
+			extension.add(getExtenstion(itemFile));
+		}
+		extension.sort(null);
+		//System.out.println(extension);
+		
+		HashSet<String>set = new HashSet<String>(extension);
+		
+		List<String> uniqueExt = new ArrayList<String>(set);
+		
+		for(int i = 0 ; i<uniqueExt.size();i++) {
+			int repeat = 0;
+			for(int j = 0 ; j <extension.size();j++) {
+				if(uniqueExt.get(i).equals(extension.get(j))) {
+					repeat++;
+				}
+			}
+			System.out.printf();
+		}
+//		for(int i = 0 ; i < extension.size() ; i++) {
+//			
+//			if(i>0&&!extension.get(i-1).equals(extension.get(i))) {
+//			set.add(extension.get(i-1));	
+//			}
+//			if(i==extension.size()-1) {
+//				set.add(extension.get(i));
+//			}
+//		}
+		
+		//System.out.println(set);
+	}
+	
+	private static String getExtenstion(File itemFile) {
+		String fileName = itemFile.getName();
+		int location = fileName.indexOf('.');
+		String fileType = fileName.substring(location,fileName.length());
+		
+		return fileType;
+		
+	}
+}
+
+
+

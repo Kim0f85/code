@@ -1,0 +1,54 @@
+package com.test.question;
+
+import java.io.File;
+
+public class Q117 {
+
+	private static int dirNum;
+	private static int fileNum;
+	static {
+		dirNum = 0;
+		fileNum = 0;
+	}
+
+	public static void main(String[] args) {
+		String path = "C:\\class\\code\\java\\파일 디렉토리 문제\\폴더 삭제\\delete";
+		
+		File dir = new File(path);
+		
+		count(dir);
+		System.out.println("폴더를 삭제했습니다.");
+		System.out.printf("총 폴더 개수 : %,d개이고, ",dirNum);
+		System.out.printf("파일은 %d개입니다\n",fileNum);
+		
+
+	}
+
+	private static void count(File dir) {
+		// 1. 목록 가져오기
+		File[] list = dir.listFiles();
+
+		// 2. 파일 > 개수
+		for (File file : list) {
+			if (file.isFile()) {
+				file.delete();
+			
+				fileNum++;
+			}
+			
+			
+		}
+		
+		// 3. 자식 폴더 동일한 행동 반복
+		for (File subdir : list) {
+			if (subdir.isDirectory()) {
+				//subdir.deleteOnExit();
+				
+				count(subdir);
+				subdir.delete();
+				dirNum++;
+			}
+		}
+	}
+}
+

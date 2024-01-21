@@ -1,0 +1,23 @@
+package com.test.question;
+
+import java.io.File;
+
+public class Q113 {
+	public static void main(String[] args) {
+		String path = "C:\\class\\code\\java\\파일 디렉토리 문제\\음악 파일\\Music";
+		
+		File dir = new File(path);
+		
+		File[] dirfiFiles = dir.listFiles();
+		
+		for(int i = 0 ; i < dirfiFiles.length ; i ++);{
+			System.out.println(dirfiFiles);
+			
+			
+			
+		}
+		
+		
+		
+	}
+}
