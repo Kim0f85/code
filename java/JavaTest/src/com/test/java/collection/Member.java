@@ -23,18 +23,18 @@ public class Member {
 		return String.format("%s(%d)", this.name,this.age);
 	}
 
-	@Override
-	public int hashCode() {
-		//이름+나이
-		//홍길동20
-		//아무개 25
-		
-		return (this.name+this.age).hashCode();
-	}
-	
-	@Override
-	public boolean equals(Object obj) {
-		
-		return this.hashCode()==obj.hashCode();
-	}
+//	@Override
+//	public int hashCode() {
+//		//이름+나이
+//		//홍길동20
+//		//아무개 25
+//		
+//		return (this.name+this.age).hashCode();
+//	}
+//	
+//	@Override
+//	public boolean equals(Object obj) {
+//		
+//		return this.hashCode()==obj.hashCode();
+//	}
 }
