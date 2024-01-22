@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.test.java.file.test"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthScrollPaneUI"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicTreeUI.TreeCancelEditingAction"/>
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
@@ -51,13 +50,14 @@
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicPasswordFieldUI"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.test.java.collection.Member"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="com.test.data.Data"/>
     <fullyQualifiedTypeName name="int"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

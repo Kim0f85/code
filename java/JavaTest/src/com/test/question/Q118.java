@@ -1,6 +1,7 @@
 package com.test.question;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Set;
@@ -9,16 +10,11 @@ public class Q118 {
 	public static void main(String[] args) {
 		String path = "C:\\class\\code\\java\\파일 디렉토리 문제\\크기 정렬";
 		
-		HashMap<String, String> order = new HashMap<String, String>();
-		
 		File dir = new File(path);
 		
+		ArrayList<File>order = new ArrayList<File>();
 		
 		count(dir,order);
-		
-		Set<String>fileName = order.keySet();
-		Collection<String>fileSize = order.values();
-		
 		
 		for(String item : fileName) {
 			System.out.printf("%s , %s\n",item,order.get(item));
@@ -26,7 +22,7 @@ public class Q118 {
 		
 	}
 	
-	private static void count(File dir, HashMap<String, String> order) {
+	private static void count(File dir, ArrayList<File> order) {
 		// 1. 목록 가져오기
 		File[] list = dir.listFiles();
 
@@ -34,7 +30,7 @@ public class Q118 {
 		for (File file : list) {
 			if (file.isFile()) {
 				//if(file.length)
-				order.put(file.getName(), getSize(file.length()));
+				order.add()
 				//System.out.println(order);
 			}
 			
