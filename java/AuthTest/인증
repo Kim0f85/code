@@ -1,0 +1,41 @@
+
+
+콘솔 기반 인증
+
+1. 사용 계층
+	- 미인증 유저(로그인 하기전)
+	- 인증 유저(로그인 한후)
+	- 관리자(로그인 한 후)
+	
+2. 업무
+	- 모든 계층 접근 > 자유 게시판
+	- 인증 유저 > 회원 전용 게시판 
+	- 관리자 > 관리자 전용 게시판 
+	
+패키지
+- com.test.java//루트
+	- main.java > main()소유;
+	
+- com.test.java.view
+	- View.java
+
+- com.test,java.user
+	-User.java
+	
+- com.test.java.admin
+	-Admin.java
+	
+- com.test.java.member
+	-
+
+- com.test.java.board.freeboard//자유게시판
+	-FreeBoard.java
+- com.test.java.board.memberboard//회원게시판
+	-MemberBoard.java
+- com.test.java.board.adminboard//관리자게시판 
+	-AdminBoard
+	
+회원 정보 데이터 
+- AuthTest > "member" > "member.txt
+
+

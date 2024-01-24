@@ -25,7 +25,7 @@ public class Ex44_package {
 		
 		Yellow y1 = new Yellow();
 		
-		com.test.java.aaa.Yellow y2 = new com.test.java.aaa.Yellow();
+		//com.test.java.aaa.Yellow y2 = new com.test.java.aaa.Yellow();
 		
 		/*
 			패키지 + 접근 지정자
