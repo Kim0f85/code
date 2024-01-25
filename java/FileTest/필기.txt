@@ -1,0 +1,47 @@
+
+New > Java Project > "FileTest"
+
+[성적 관리 프로그램]
+
+상황
+- 중학생 > 이름
+- 학생수: 10여명
+- 과목: 국어, 영어, 수학
+- 총점, 평균 계산
+
+기능(업무) > CRUD(Create, Read, Update, Delete)
+- 성적 추가
+- 성적 읽기
+- 성적 삭제
+
+데이터 파일(구조)
+- FileTest > dat > score.txt
+
+학생명,국어,영어,수학
+홍길동,100,90,80
+아무개,90,88,98
+
+
+패키지
+- com.test.java > 메인
+	- Main.java > 메인 클래스
+
+- com.test.java.repository > 데이터 처리 계층
+	- Data.java
+	- 성적 1명 > 텍스트 파일 1줄 > 자바 자료형 > Score.java
+	
+- com.test.java.service > 서비스 계층
+	- Service.java > 업무 담당
+
+
+
+
+
+
+
+
+
+
+
+
+
