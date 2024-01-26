@@ -8,7 +8,7 @@ public class menupage {
         // Example data with different spacing for each column
         String[][] tableData = {
                 {"1. 자산관리", "2. 송금  ", "3. 투자    "},
-                {"4. 고객센터", "5. MyPage", "0. 로그하웃"}               
+                {"4. 고객센터", "5. MyPage", "0. 로그아웃"}               
         };
 
         // Print the ASCII table with custom spacing
