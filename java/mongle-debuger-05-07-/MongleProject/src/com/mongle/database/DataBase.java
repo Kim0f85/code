@@ -165,35 +165,43 @@ public class DataBase {
 	
 
 	
-	private boolean validBirth(String input) {
+	public static boolean validBirth(String input) {
+		
 		
 		String [] birthSplit = input.split("/");
 		int year = Integer.parseInt(birthSplit[0]);
 		int month = Integer.parseInt(birthSplit[1]);
-		String regex = "";
+		String regex;
 		
 		if(month==1||month==3||month==5||month==7||month==8||month==10||month==12) {
-			regex =  "^[1900-2020]{4}/[01-12]{2}/[01-31]{2}$";
+			regex = "^(19|20)\\d{2}([\\/.-])(0[1-9]|1[1,2])([\\/.-])(0[1-9]|[12][0-9]|3[01])$";
 		}else if(month==2){
 			if(year%4==0) {
-				regex =  "^[1900-2020]{4}/[01-12]{2}/[01-29]{2}$";
+				regex =  "^(19|20)\\d{2}([\\/.-])(02)([\\/.-])(0[1-9]|1[0-9]|2[0-9])$";
 			}
-			regex =  "^[1900-2020]{4}/[01-12]{2}/[01-28]{2}$";
+			regex =  "^(19|20)\\d{2}([\\/.-])(02)([\\/.-])(0[1-9]|1[0-9]|2[0-8])$";
 		}else {
-			regex =  "^[1900-2020]{4}/[01-12]{2}/[01-30]{2}$";
+			regex =  "^(19|20)\\d{2}([\\/.-])(0[1-9]|1[1,2])([\\/.-])(0[1-9]|[12][0-9]|3[0])$";
 		}
 		
 		
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(input);
-		if (!m.matches()) {
+		boolean matchfound = m.find();
+		System.out.println();
+		if (!matchfound) {
 			System.out.printf("\n%22s잘못된 입력입니다.\n"," ");
 			System.out.printf("\n%22s도움이 필요하시면 고객센터에 문의 해주세요\n"," ");
-			return m.matches();
-		} else {
-			return m.matches();
-		} 
-	
+			return false;
+		}else {
+			HashMap<String, String> newUser = new HashMap<String, String>();
+			newUser.put("생년월일", input);  // 사용자 아이디 저장
+	        user.add(newUser);
+		
+			return matchfound
+					;
+		}
+		
 	}//birth
 	
 
