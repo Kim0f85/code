@@ -72,8 +72,8 @@ String acc;
 		//----------------bank ---------
 		
 //		do {
-//			System.out.printf("\n%22s1\n"," ");
-//			System.out.printf("\n%22s3.계좌번호: "," ");	
+//			System.out.printf("\n%22s4. 은행을 선택해주세요\n"," ");
+//			System.out.printf("\n%22s선택 번호:  "," ");	
 //			acc = scan.nextLine();
 //			}
 //			while(!DataBase.validAcc(acc));
