@@ -20,8 +20,23 @@ public class Ex01 {
 
 	public static void main(String[] args) {
 
-		System.out.println("안녕하세요");
+		 String str = "how.to.split.a.string.in.java";
+	        String[] arrOfStr = str.split("\\.");
+	        for (String a : arrOfStr) {
+	            System.out.println(a);
+	        }
 		
 	}
+	public class Main {
+
+	    public static void main(String[] arg) {
+	        String str = "how.to.split.a.string.in.java";
+	        String[] arrOfStr = str.split("\\.");
+	        for (String a : arrOfStr) {
+	            System.out.println(a);
+	        }
+	    }
+	}
+
 
 }
