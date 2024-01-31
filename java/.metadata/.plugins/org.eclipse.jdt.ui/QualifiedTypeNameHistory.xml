@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Package"/>
-    <fullyQualifiedTypeName name="com.test.java.view.View"/>
-    <fullyQualifiedTypeName name="com.test.java.board.memberboard.MemberBoard"/>
-    <fullyQualifiedTypeName name="java.beans.beancontext.BeanContextServiceProviderBeanInfo"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="java.lang.NegativeArraySizeException"/>
     <fullyQualifiedTypeName name="com.github.lalyos.jfiglet.FigletFont"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
     <fullyQualifiedTypeName name="com.test.java.service.Service"/>
@@ -18,10 +12,7 @@
     <fullyQualifiedTypeName name="java.net.URL"/>
     <fullyQualifiedTypeName name="javax.print.attribute.standard.JobKOctets"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.nimbus.NimbusLookAndFeel"/>
-    <fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
-    <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
     <fullyQualifiedTypeName name="com.test.java.obj.Book"/>
-    <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
     <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
     <fullyQualifiedTypeName name="java.util.spi.LocaleNameProvider"/>
     <fullyQualifiedTypeName name="java.awt.Choice"/>
@@ -41,11 +32,8 @@
     <fullyQualifiedTypeName name="com.test.java.member.Admin"/>
     <fullyQualifiedTypeName name="com.test.java.member.Member"/>
     <fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterMakeAndModel"/>
-    <fullyQualifiedTypeName name="com.mongle.resource.ResourcePath"/>
-    <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
@@ -57,7 +45,19 @@
     <fullyQualifiedTypeName name="com.mongle.view.MongleVisual"/>
     <fullyQualifiedTypeName name="com.mongle.yourapp.MainMenu"/>
     <fullyQualifiedTypeName name="com.mongle.main.Main"/>
-    <fullyQualifiedTypeName name="com.mongle.yourapp.LogIn"/>
     <fullyQualifiedTypeName name="com.mongle.resource.UserData"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLEditorKit.Parser"/>
+    <fullyQualifiedTypeName name="org.xml.sax.Parser"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
+    <fullyQualifiedTypeName name="com.mongle.resource.ResourcePath"/>
+    <fullyQualifiedTypeName name="com.mongle.yourapp.LogIn"/>
+    <fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+    <fullyQualifiedTypeName name="java.security.Identity"/>
+    <fullyQualifiedTypeName name="java.io.PipedWriter"/>
+    <fullyQualifiedTypeName name="com.mongle.yourapp.Encrypt"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
