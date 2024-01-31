@@ -28,6 +28,11 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\class\mongle\MongleProject"/>
+			<item value="C:\class\mongle"/>
+			<item value="C:\class\code"/>
+			<item value="C:\class\code\java\mongle"/>
+			<item value="C:\class\code\java\mongle\MongleProject"/>
 			<item value="C:\class\code\java\mongle-05"/>
 			<item value="C:\class\code\java"/>
 			<item value="C:\Users\user\Desktop\mongle-07.zip"/>
