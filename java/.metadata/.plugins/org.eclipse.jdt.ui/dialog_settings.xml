@@ -184,8 +184,8 @@
 		<item key="nonavbar" value="false"/>
 		<item key="openinbrowser" value="false"/>
 		<item key="source" value="21"/>
-		<item key="antpath" value="C:\class\code\java\DocumentTest\javadoc.xml"/>
-		<item key="destdir" value="C:\class\code\java\DocumentTest\doc"/>
+		<item key="antpath" value="C:\class\mongle\MongleProject\javadoc.xml"/>
+		<item key="destdir" value="C:\Users\user\Desktop\export"/>
 		<item key="vmparam" value="-locale ko_KR -encoding UTF-8 -charset UTF-8 -docencoding UTF-8&#x0D;&#x0A;"/>
 		<section name="projects">
 			<section name="FileTest">
@@ -198,45 +198,15 @@
 				<item key="destdir" value="C:\class\code\java\Hello\doc"/>
 				<item key="antpath" value="C:\class\code\java\Hello\javadoc.xml"/>
 			</section>
-			<section name="org.eclipse.cdt.core.win32.x86_64">
-				<item key="href" value=""/>
-				<item key="destdir" value="C:\class\code\java\eclipse\plugins\org.eclipse.cdt.core.win32.x86_64_11.4.0.202311271618\META-INF\maven\org.eclipse.cdt\org.eclipse.cdt.core.win32.x86_64\doc"/>
-				<item key="antpath" value="C:\class\code\java\eclipse\plugins\org.eclipse.cdt.core.win32.x86_64_11.4.0.202311271618\META-INF\maven\org.eclipse.cdt\org.eclipse.cdt.core.win32.x86_64\javadoc.xml"/>
-			</section>
-			<section name="org.eclipse.m2e.maven.runtime">
-				<item key="href" value=""/>
-				<item key="destdir" value="C:\class\code\java\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345\META-INF\maven\org.eclipse.m2e\org.eclipse.m2e.maven.runtime\doc"/>
-				<item key="antpath" value="C:\class\code\java\eclipse\plugins\org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345\META-INF\maven\org.eclipse.m2e\org.eclipse.m2e.maven.runtime\javadoc.xml"/>
-			</section>
 			<section name="JavaTest">
 				<item key="href" value=""/>
 				<item key="destdir" value="C:\class\code\java\JavaTest\doc"/>
 				<item key="antpath" value="C:\class\code\java\JavaTest\javadoc.xml"/>
 			</section>
-			<section name="mongle-05">
+			<section name="MongleProject">
 				<item key="href" value=""/>
-				<item key="destdir" value="C:\class\code\java\mongle-05\doc"/>
-				<item key="antpath" value="C:\class\code\java\mongle-05\javadoc.xml"/>
-			</section>
-			<section name="org.eclipse.wildwebdeveloper">
-				<item key="href" value=""/>
-				<item key="destdir" value="C:\class\code\java\eclipse\plugins\org.eclipse.wildwebdeveloper_1.1.4.202311211923\META-INF\maven\org.eclipse.wildwebdeveloper\org.eclipse.wildwebdeveloper\doc"/>
-				<item key="antpath" value="C:\class\code\java\eclipse\plugins\org.eclipse.wildwebdeveloper_1.1.4.202311211923\META-INF\maven\org.eclipse.wildwebdeveloper\org.eclipse.wildwebdeveloper\javadoc.xml"/>
-			</section>
-			<section name="org.eclipse.m2e.sourcelookup">
-				<item key="href" value=""/>
-				<item key="destdir" value="C:\class\code\java\eclipse\plugins\org.eclipse.m2e.sourcelookup_2.0.301.20231030-1438\META-INF\maven\org.eclipse.m2e\org.eclipse.m2e.sourcelookup\doc"/>
-				<item key="antpath" value="C:\class\code\java\eclipse\plugins\org.eclipse.m2e.sourcelookup_2.0.301.20231030-1438\META-INF\maven\org.eclipse.m2e\org.eclipse.m2e.sourcelookup\javadoc.xml"/>
-			</section>
-			<section name="org.eclipse.epp.package.jee">
-				<item key="href" value=""/>
-				<item key="destdir" value="C:\class\code\java\eclipse\plugins\org.eclipse.epp.package.jee_4.30.0.20231201-1200\META-INF\maven\org.eclipse.epp\org.eclipse.epp.package.jee\doc"/>
-				<item key="antpath" value="C:\class\code\java\eclipse\plugins\org.eclipse.epp.package.jee_4.30.0.20231201-1200\META-INF\maven\org.eclipse.epp\org.eclipse.epp.package.jee\javadoc.xml"/>
-			</section>
-			<section name="mongle-debuger-05-07-">
-				<item key="href" value=""/>
-				<item key="destdir" value="C:\class\code\java\mongle-debuger-05-07-\doc"/>
-				<item key="antpath" value="C:\class\code\java\mongle-debuger-05-07-\javadoc.xml"/>
+				<item key="destdir" value="C:\Users\user\Desktop\export"/>
+				<item key="antpath" value="C:\class\mongle\MongleProject\javadoc.xml"/>
 			</section>
 			<section name="AuthTest">
 				<item key="href" value=""/>
@@ -247,11 +217,6 @@
 				<item key="href" value=""/>
 				<item key="destdir" value="C:\class\code\java\DocumentTest\doc"/>
 				<item key="antpath" value="C:\class\code\java\DocumentTest\javadoc.xml"/>
-			</section>
-			<section name="org.eclipse.epp.package.common">
-				<item key="href" value=""/>
-				<item key="destdir" value="C:\class\code\java\eclipse\plugins\org.eclipse.epp.package.common_4.30.0.20231201-1200\META-INF\maven\org.eclipse.epp\org.eclipse.epp.package.common\doc"/>
-				<item key="antpath" value="C:\class\code\java\eclipse\plugins\org.eclipse.epp.package.common_4.30.0.20231201-1200\META-INF\maven\org.eclipse.epp\org.eclipse.epp.package.common\javadoc.xml"/>
 			</section>
 		</section>
 	</section>

@@ -40,10 +40,10 @@ public class Ex20_DateTime {
 		
 		//m1();
 		//m2();
-		//m3();
+		m3();
 		//m4();
 		//m5();
-		m6();
+		//m6();
 		//m7();
 	}//main
 

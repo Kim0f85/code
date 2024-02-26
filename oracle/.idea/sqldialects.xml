@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/.metadata/Project.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/ex28_modeling.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/ex29_plsql.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/ex31.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/ex32_index.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/groupproject/MovieRating.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/groupproject/STAFF.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/groupproject/actor.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/groupproject/director.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/groupproject/movie.sql" dialect="OracleSqlPlus" />
+  </component>
+</project>
