@@ -1,0 +1,114 @@
+network 
+- 2대 이상의 컴퓨터를 서로 연결해놓은 환경 
+- 통신 가능한 환경 
+
+internet
+- inter-network
+- 전세계의 모든 컴퓨터를 서로 연결해놓은 환경 
+
+우리의 목적 
+- WEB 기반의 서비스 구현 
+
+WEB 구성 
+- 웹클라이언트 <-> 웹서버 
+- 웹서버 : 문서를 제공함 > 아파치 톰켓 
+- 웹클라이언트 : 문서를 요청 + 제공받음(소비) > 웹 브라우저 (크롬)
+
+URI
+- Uniform Resource Identifier
+
+URL
+- Uniform Resource Locator 
+- 웹에서 주어진 자원(웹문서, 이미지, 동영상, 파일 등)의 고유 주소 
+
+http://www.naver.com:80/member/list.html - url 
+
+1. http:
+	- 프로토콜(protocol) > 통신규약
+	- 서로간의 데이터를 주고 받을 때 사용하는 규칙(약속)
+	- HyperText(HTML) transfer protocol
+	- http:
+	- https: + 보안(security)
+	
+2. www.naver.com
+	- domain address
+	- 도메인 주소 
+	- 서버 컴퓨터(호스트)의 주소 
+	- IP address 사용
+	
+3. IP
+	- 인터넷에서 호스트를 구분하는 고유 주소값(전세계에서 유일한 값)
+	- XXX.XXX.XXX.XXX IPv4
+	- http://223.130.200.236
+	
+4. DNS
+	- Domain Name system 
+	- DNS Server
+	- http://naver.com > (변환) > http://223.130.200.236
+	
+5. Port Number
+	- 네트워크를 사용하는 프로그램이 사용하는 통로 
+	- 0 ~ 65535
+	- 독점 
+	- ~ 1000 : 예약 포트 넘버 
+	- http: > :80 번호(기본)
+	- https: > 433 번호(기본)
+	
+6. IP:80
+	- 상대방의 컴퓨터 + 
+	- 종단점 (end point)
+	
+7. /member
+	- 자원의 경로(폴더)
+	
+8. /list.html
+	- 자원명(파일명)
+
+9. ?name=hong&age=10&gender=f
+	- query string
+	- name = hong
+		- name : parameter 
+		- hong : 
+		
+java 개발 및 실행 환경  
+- 개발 : JDK 
+- 실행 : JRE
+
+HTML/CSS/JavaScript 실행(개발) 환경 
+- 실행 : 브라우저 > 크롬 
+
+
+src > main > webapp
+- 아파치 톰갯 구조 
+- 웹사이트를 구성하는 자원들의 최상위 폴더 
+
+
+HTML, Hyper Text Markup Language 
+- 하이퍼 텍스트 마크업 언어 
+- HyperText > 링크(Link)
+- Markup Language > 태그(TAG)를 사용해서 문법을 표기하는 언어
+	- SGML< XML, HTML, XHTML 등...
+- 프로그래밍 언어(X) > 표현 언어(O) : 브라우저 화면에 무언가를 출력하는 기능만 있는 언어 
+- http://w3.org, http://w3c.org
+- html 1.0 ~ html5
+
+HTML 개발환경 
+- 텍스트 편집기 
+1. 메모장 
+2. IDE > Eclipse, visual Studio, Intellij 등 
+3. sublimeText, Atom, Brackets, Visual Studio Code 등.
+
+- 실행 환경 
+1. 크롬 
+
+html 1.0
+- 1993
+- 브라우저
+	1. 모자익
+	2. 넷스케이프 네비게이터
+	3. MS > 인터넷 익스프로러 
+	
+	
+
+
+	
