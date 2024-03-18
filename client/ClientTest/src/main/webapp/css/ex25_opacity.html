@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            Opacity, 불투명도
+            - 0 ~ 1
+            - 0(투명), 1(불투명)
+
+        
+        */
+        #cat2{
+            /* opacity: 0.5; */
+            /* margin-left: -100px; */
+        }
+
+        #box{
+            /* border: 10px solid green; */
+            width: 670px;
+        }
+        #box > img{
+            opacity: 0.3;
+            cursor: text;
+        }
+        #box > img:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- ex25_opacity.html -->
+    <div id="box">
+        <img src="images/catty01.png" id="cat1">
+        <img src="images/catty02.png" id="cat2">
+        <img src="images/catty03.png" id="cat3">
+        <img src="images/catty04.png" id="cat4">
+        <img src="images/catty05.png" id="cat5">
+    </div>
+    </div>
+</body>
+</html>

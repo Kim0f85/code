@@ -1,0 +1,19 @@
+
+
+.table{
+    border: 1px solid #555;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #555;
+    padding: 4px;
+}
+
+.table th{
+    background-color: #EEEEEE;
+}
+
+.table tr:hover{
+    background-color: #efefef;
+}

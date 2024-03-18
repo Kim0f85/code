@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+
+        1. 인라인 태그 
+            - 내용물의 수평 정렬이 불가능하다. 
+            - 내용물의 크기 == 영역의 크기 > 움직일 공간이 없다. 
+            - text-align 속성 사용 불가 
+            - 스스로 정렬 불가능 > 부모인 블럭 태그의 text-align을 사용한다. 
+
+        2. 블럭태그 
+            - 내용물의 수평 정렬이 가능하다. 
+            - 블럭태그는 내용물의 크기와 상관없이 항상 너비(width)가 100%이다. 
+            - 블럭 태그 스스로의 수평 정렬 
+
+
+
+        */
+
+        #span1{
+            background-color: gold;
+            text-align: center;
+        }
+
+        #box1{
+            text-align: center;
+        }
+
+        #div1{
+            text-align: center;
+            background-color: tomato;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #box2{
+            background-color: cornflowerblue;
+            padding: 5px;
+            text-align: center;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- ex20_align.html -->
+
+    <h1>인라인 태그</h1>
+    
+    <div id="box1">
+        <span id="span1">인라인 태그</span>
+    </div>
+
+    <h1>블럭 태그</h1>
+
+    <div id="box2">
+        <div id="div1">블럭태그</div>
+    </div>
+
+</body>
+</html>
