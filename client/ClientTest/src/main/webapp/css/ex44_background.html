@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            border: 1px solid black;
+            width: 400px;
+            height: 400px;
+            background-image: url(images/cat05.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        #box2{
+            border: 1px solid black;
+            width: 600px;
+            height: 400px;
+            margin: 50px 0;
+
+            /* background: linear-gradient(red,blue); */
+            /* background: linear-gradient(to top, red, blue); */
+            /* background: radial-gradient(red,blue); */
+            background-image: url(images/catty01.png),url(images/catty02.png),url(images/catty03.png);
+            background-repeat: no-repeat ;
+            background-position: left top, center center, right bottom;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>

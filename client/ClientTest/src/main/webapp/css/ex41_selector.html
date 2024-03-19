@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list input{
+            display: block;
+            margin-bottom: 5px;
+            border: 1px solid #444;
+            outline: none;
+            padding: 4px;
+            background-color: #ffffff;
+            color: #444;
+        }
+
+        /* #list input:required{
+            background-color: gold;
+
+        }
+        #list input:required{
+            background-color: #ccc;
+        } */
+
+        /* #list input:disabled{
+            background-color: gold;
+        }
+        #list input:enabled{
+            background-color: #CCC;
+        } */
+
+        /* #list input:read-only{
+            background-color: gold;
+        }
+        #list input:read-write{
+            background-color: #CCC;
+        } */
+
+        input[type=checkbox]{
+            opacity: .3;
+        }
+
+        input[type=checkbox]:checked{
+            opacity: 1;
+        }
+
+        #cb1:checked+div{
+            display: none;
+        }
+        #item #cb2{
+            display: none;
+        }
+
+        #item label {
+            font-size: 1.5em;
+            font-family: Arial;
+            font-variant: small-caps;
+            display: block;
+            padding: 10px;
+            background-color: cornflowerblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        #item{
+            border: 1px solid black;
+            width: 200px;
+        }
+        #item div{
+            display: none;
+            border-top: 1px solid black;
+            padding: 15px;
+        }
+
+        #item #cb2:checked+label+div{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- ex41_selector.html -->
+
+    <div id="item">
+        <input type="checkbox" id="cb2">
+        <label for="cb2">JavaScript</label>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam iusto perspiciatis quasi expedita nam eum necessitatibus deserunt ad. Animi laudantium repellendus nemo sed modi tenetur quaerat! Omnis amet, iure reprehenderit in, assumenda alias dolore pariatur libero cupiditate beatae vitae sequi velit culpa non aperiam labore doloribus debitis corrupti, molestiae illo.</div>
+    </div>
+
+
+    <hr>
+
+    <label for="cb1">설명 감추기</label>
+    <input type="checkbox" id="cb1">
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, numquam voluptatibus! Nostrum dolor atque saepe et? Cum, id culpa, perspiciatis aliquam eaque quam at rem, corporis officia quaerat odit facere.</div>
+
+
+    <hr>
+
+    <div>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+
+
+    <hr>
+
+    <div id="list">
+        <input type="text" value="1" required>
+        <input type="text" value="2" readonly>
+        <input type="text" value="3" readonly>
+        <input type="text" value="4">
+        <input type="text" value="5" required>
+        <input type="text" value="6" disabled>
+        <input type="text" value="7">
+        <input type="text" value="8" disabled>
+        <input type="text" value="9">
+        <input type="text" value="10" required>
+    </div>
+
+</body>
+</html>
