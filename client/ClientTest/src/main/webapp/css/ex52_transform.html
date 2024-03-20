@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            margin: 100px;
+        }
+
+        body{
+            padding-bottom: 500px;
+        }
+
+        body:hover #box{
+            background-color: blue;
+            transform: rotate(45deg);
+
+            /* 변화 중심축 */
+            transform-origin: -200px -200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ex52_transform.html -->
+    <div id="box">상자</div>
+</body>
+</html>

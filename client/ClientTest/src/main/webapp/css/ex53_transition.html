@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+    #box{
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        background-color: gold;
+        margin: 100px;
+    }
+
+    body{
+ 
+    }
+    /* 
+        전환, transition
+        - 객체의 속성(값)이 변화되는 과정을 시간 순으로 보여주는 기술 
+        - 수치형 속성 값에 한해서..
+    */
+    #box{
+        transition: width, height, font-size, opacity, background-color, rotate;
+        transition-duration: 1s;
+    }
+
+    body:hover #box{
+        width: 400px;
+        height: 400px;
+        font-size: 5rem;
+        /* font-family: '궁서체'; */
+        /* opacity: 0; */
+        background-color: cornflowerblue;
+        /* border-width: 100px; */
+        /* border-radius: 50%; */
+        /* margin-left: 300px; */
+        /* box-shadow: 10px 10px 5px #555; */
+        /* transform: translate(100px,0px); */
+        /* transform: scale(-2,1) ; */
+        transform: rotate(360deg);
+    }
+    </style>
+</head>
+<body>
+    <!-- ex53_transition.html -->
+    <div id="box">상자</div>
+
+</body>
+</html>
