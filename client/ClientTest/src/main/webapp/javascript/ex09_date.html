@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ex09_date.html -->
+    <script>
+        //날짜 시간
+        //- 내장 객체 > Date
+
+        var now = new Date();// new 생성자함수();
+        console.log(now);
+        console.log(now.toString());
+        console.log(typeof now);
+        //요소 추출
+        //- c.get(calendar.YEAR)
+        console.log(now.getYear());
+        console.log(now.getFullYear());
+        console.log(now.getMonth());
+        console.log(now.getDate());
+        console.log(now.getDay());
+        console.log(now.getHours());
+        console.log(now.getMinutes());
+        console.log(now.getSeconds());
+        console.log(now.getMilliseconds());
+        console.log(now.getTime());
+        
+        //출력. %tF, %tT, %tA
+        console.log(now.toString());
+        console.log(now.toLocaleString());
+        console.log(now.toDateString());
+        console.log(now.toTimeString());
+        console.log(now.toLocaleDateString());
+        console.log(now.toLocaleTimeString());
+
+        //특정 시각 만들기 
+        var christmas = new Date();
+
+        christmas.setFullYear(2024);
+        christmas.setMonth(11);
+        christmas.setDate(25);
+
+        christmas.setHours(21);
+        christmas.setMinutes(0);
+        christmas.setSeconds(0);
+
+        console.log(christmas.toLocaleString());
+
+        var birthday = new Date(1995,10,10,12,30,0);
+
+        console.log(birthday.toLocaleDateString());
+
+        console.log(christmas-now); //SQL(일), javaScript(ms)
+        console.log((christmas-now)/1000/60/60/24);
+
+
+        //시각 + 시간
+        //시각 - 시간
+        var ani = new Date();
+        console.log(ani.getTime()+(100*24*60*60*1000));
+        console.log(ani.toLocaleString());
+
+
+    </script>
+</body>
+</html>
