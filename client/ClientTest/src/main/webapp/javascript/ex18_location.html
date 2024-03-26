@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--ex18_location.html-->
+
+    <h1>location 객체</h1>
+    <form name="form1">
+        <input type="button" value="버튼" name="btn1">
+        <hr>
+        <input type="text">
+    </form>
+
+    <script>
+
+        // window.document.form1.btn1;
+
+        document.form1.btn1.onclick = m1;
+        
+        function m1() {
+            //location 객체
+            //- windows > location
+            //- 현재 창의 페이지 주소 참조 객체 > URL 조작
+
+            // console.log(location.href)
+
+            // 페이지 이동(자바스크립트) ******
+            location.href='ex16_windows.html';
+
+            location.reload();
+            location.assign('ex16_windows.html');
+
+            console.log(location.host);
+
+        }
+
+        //전역 이벤트
+        //- 어떤 상황에서 행동하던지 상관없이 > 항상 발생하는 이벤트
+        window.onkeydown = m2();
+
+        function m2() {
+            alert(event.keyCode);
+            if (event.keyCode==78){
+                location.href='https://naver.com';
+            }else if (event.keyCode==71){
+                location.href='https://google.com';
+            }else if (event.keyCode==68){
+                location.href='https://daum.net';
+            }
+        }
+    </script>
+</body>
+</html>

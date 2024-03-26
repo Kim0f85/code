@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--ex19_history.html-->
+
+    <h1>history 객체</h1>
+    <form name="form1">
+        <input type="button" value="뒤로 가기" name="btn1">
+        <input type="button" value="앞으로 가기" name="btn2">
+        <input type="button" value="" name="btn3">
+
+    </form>
+
+
+
+    <script !src="">
+        //history 객체
+        //- 브라우저 히스토리 영역 >
+
+        document.form1.btn1.onclick = m1();
+        document.form1.btn2.onclick = m2();
+        document.form1.btn3.onclick = m3();
+
+        function m1() {
+            history.back();
+        }
+
+        function m2() {
+            history.forward();
+        }
+
+
+        function m3() {
+            history.go(-2);
+        }
+    </script>
+</body>
+</html>
