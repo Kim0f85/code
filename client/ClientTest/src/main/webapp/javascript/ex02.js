@@ -1,3 +1,3 @@
-//ex02.js
+// ex02.js
 
-alert('hello')
+alert('Hello');

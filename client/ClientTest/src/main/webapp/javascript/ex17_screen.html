@@ -1,28 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-    </style>
 </head>
 <body>
+    <!-- ex17_screen.html -->
 
     <script>
-        // window > screen
+
+        //screen 객체
+        //- window > screen
         //- 화면 정보 제공
 
-        console.log(window.screen.availWidth);
-        console.log(window.screen.availHeight);
+        //현재 보고 있는 화면의 크기 > 모니터 해상도
+        console.log(window.screen.availWidth); //1920
+        console.log(window.screen.availHeight);//1032
+        console.log(window.screen.colorDepth); //24bit color
 
-        console.log(window.screen.colorDepth);
+        //ScreenOrientation {angle: 0, type: 'landscape-primary', onchange: null}
         console.log(window.screen.orientation);
-        console
 
     </script>
+
 </body>
 </html>

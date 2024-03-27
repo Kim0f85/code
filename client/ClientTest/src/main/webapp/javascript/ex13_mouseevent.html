@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        textarea, input{
+        textarea, input {
+            color: '#00ffaa';
             display: block;
             margin-bottom: 10px;
         }
-        textarea{
+        textarea {
             width: 500px;
             height: 300px;
             outline: none;
-            resize: horizontal;
-
+            resize: none;
+            font-size: 2rem;
         }
-
     </style>
 </head>
 <body>
@@ -26,89 +26,107 @@
         <textarea name="txt1"></textarea>
         <input type="button" value="버튼" name="btn1">
     </form>
+
     <script>
+
         var txt1 = window.document.form1.txt1;
         var btn1 = window.document.form1.btn1;
 
         /* 
-            마우스 관련 이벤트 
+            마우스 관련 이벤트
             - onmouseXXX
 
             1. onmouseover/onmouseenter
-                - 해당 객체 영역에 마우스 커서가 진입하는 순간 발생 
+                - 해당 객체 영역에 마우스 커서가 진입하는 순간 발생
             2. onmouseout/onmouseleave
-                - 해당 객체 영역에서 마우스 커서가 빠져나가는 순간 발생 
+                - 해당 객체 영역에서 마우스 커서가 빠져나가는 순간 발생
             3. onmousedown
-                - 해당 객체 영역에서 마우스 버튼을 누르는 순간 발생 
+                - 해당 객체 영역에서 마우스 버튼을 누르는 순간 발생
             4. onmouseup
-                - 해당 객체 영역에서 마우스 버튼을 떼는 순간 발생 
+                - 해당 객체 영역에서 마우스 버튼을 떼는 순간 발생
             5. onmousemove
-                - 해당 객체 영역에서 마우스 커서를 움직일 때 발생 
+                - 해당 객체 영역에서 마우스 커서를 움직일 때 발생
+
         */
+        
+        //txt1.onmouseover = m1;
+        //txt1.onmouseout = m2;
+        //txt1.onmousedown = m3;
+        //txt1.onmouseup = m4;
+        //txt1.onmousemove = m5;
+        //txt1.onmousewheel = m6;
 
-        // txt1.onmouseover = m1;
-        // txt1.onmouseout = m2;
-        // txt1.onmousedown =m3;
-        // txt1.onmouseup =m3;
-        txt1.onmousemove=m5;
+        //클릭 > 마우스 이벤트 아니다. > 마우스 관련 작업 금지(버튼, 좌표)
+        btn1.onclick = m7;
+        
+        function m7() {
+            //message('click');
+            message(event.buttons);
+        }
 
-
-
-
-        function m1(){
-            // alert();
-            window.document.body.bgColor = 'cornflowerblue';
-
+        function m1() {
+            //alert();
+            //window.document.body.bgColor = 'cornflowerblue';
             message('mouseover');
         }
 
-        function m2(){
+        function m2() {
             message('mouseout');
-            window.document.body.bgColor = 'white';
-
+            //window.document.body.bgColor = 'white';
         }
 
-        function m3(){
-            // message('mousedown');
-            // 어떤 버튼? > 이벤트 함수내에서 사용 가능한 내장 객체 > event 
-            // message(event.buttons);
+        function m3() {
+            
+            //message('mousedown');
 
-            // if(event.buttons==2){
-            //     alert('금지')
+            //어떤 버튼? > 이벤트 함수내에서 사용 가능한 내장 객체 > event
+            //message(event.buttons);
+
+            // if (event.buttons == 2) {
+            //     alert('오른쪽 버튼 클릭 금지!!');
             // }
+
             /* 
+                
                 마우스 커서 좌표
-                1. x,y
+                1. x, y
                     - 문서 좌측 상단을 기준
-                    - 비표준(ms-ie)
-                2. clientX,clientY
-                    - 문서 좌측 상단을 기준 
+                    - 비표준(MS-IE) > 비권장
+                2. clientX, clientY *****
+                    - 문서 좌측 상단을 기준
                     - 표준 > 권장
-                3. screenX,screenY
+                3. screenX, screenY
                     - 모니터 좌측 상단을 기준
-                4. offsetX, offsetY
+                4. offsetX, offsetY *****
                     - 이벤트 객체의 좌측 상단을 기준
+            
             */
-        //    message(event.x+','+event.y);
-            // message(event.clientX+','+event.clientY);
-            // message(event.screenX+','+event.screenX);
-            message(event.offsetX+','+event.offsetY);
+            //message(event.x + ',' + event.y);
+            //message(event.clientX + ',' + event.clientY);
+            //message(event.screenX + ',' + event.screenY);
+            message(event.offsetX + ',' + event.offsetY);
+
         }
 
-        
-        function m4(){
+        function m4() {
             message('mouseup');
         }
-        
-        function m5(){
-            // message('mousemove');
-            message(event.offsetX+','+event.offsetY);
+
+        function m5() {
+            //message('mousemove');
+            message(event.offsetX + ',' + event.offsetY);
         }
 
-        function message(txt){
-            var now = new Date();
-            txt1.value = now.toLocaleTimeString()+'>'+txt+'\r\n'+txt1.value;
+        function m6(event) {
+            message('mousewheel', event.originalEvent.deltaY);
         }
+
+        function message(txt) {
+            var now = new Date();
+            txt1.value = now.toLocaleTimeString() + ' > ' + txt + '\r\n' + txt1.value;
+        }
+
+
     </script>
 </body>
 </html>

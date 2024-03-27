@@ -8,35 +8,40 @@
 <body>
     <!-- ex09_date.html -->
     <script>
+
         //날짜 시간
         //- 내장 객체 > Date
 
-        var now = new Date();// new 생성자함수();
+        //현재 시각
+        var now = new Date(); //new 생성자함수();
         console.log(now);
         console.log(now.toString());
         console.log(typeof now);
+
         //요소 추출
-        //- c.get(calendar.YEAR)
-        console.log(now.getYear());
-        console.log(now.getFullYear());
-        console.log(now.getMonth());
-        console.log(now.getDate());
-        console.log(now.getDay());
-        console.log(now.getHours());
-        console.log(now.getMinutes());
-        console.log(now.getSeconds());
-        console.log(now.getMilliseconds());
-        console.log(now.getTime());
-        
+        //- c.get(Calendar.YEAR)
+        console.log(now.getYear());         //124  > 1900년대
+        console.log(now.getFullYear());     //2024 > 2000년대
+        console.log(now.getMonth());        //2(0부터)
+        console.log(now.getDate());         //22
+        console.log(now.getDay());          //5(일(0)~토(6))
+        console.log(now.getHours());        //14
+        console.log(now.getMinutes());      //6
+        console.log(now.getSeconds());      //27
+        console.log(now.getMilliseconds()); //382
+        console.log(now.getTime());         //1711083987382ms. epoch, tick
+
         //출력. %tF, %tT, %tA
         console.log(now.toString());
-        console.log(now.toLocaleString());
+        console.log(now.toLocaleString()); //2024. 3. 22. 오후 2:11:10
+
         console.log(now.toDateString());
         console.log(now.toTimeString());
-        console.log(now.toLocaleDateString());
-        console.log(now.toLocaleTimeString());
 
-        //특정 시각 만들기 
+        console.log(now.toLocaleDateString());//2024. 3. 22
+        console.log(now.toLocaleTimeString());//오후 2:11:10
+
+        //특정 시각 만들기
         var christmas = new Date();
 
         christmas.setFullYear(2024);
@@ -49,20 +54,20 @@
 
         console.log(christmas.toLocaleString());
 
-        var birthday = new Date(1995,10,10,12,30,0);
+        //var birthday = new Date(1995, 10, 10);
+        var birthday = new Date(1995, 10, 10, 12, 30, 0);
 
-        console.log(birthday.toLocaleDateString());
-
-        console.log(christmas-now); //SQL(일), javaScript(ms)
-        console.log((christmas-now)/1000/60/60/24);
-
+        //연산
+        //시각 - 시각
+        console.log(christmas - now); //SQL(일), JavaScript(ms)
+        console.log((christmas - now) / 1000 / 60 / 60 / 24);
 
         //시각 + 시간
         //시각 - 시간
         var ani = new Date();
-        console.log(ani.getTime()+(100*24*60*60*1000));
+        //console.log(ani + 100);
+        ani.setTime(ani.getTime() + (100 * 24 * 60 * 60 * 1000));
         console.log(ani.toLocaleString());
-
 
     </script>
 </body>
