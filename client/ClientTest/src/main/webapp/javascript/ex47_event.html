@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#tbl1 { border: 1px solid black; border-collapse: collapse;}
+		#tbl1 td { border: 1px solid black; padding: 10px 20px; }
+	</style>
+</head>
+<body>
+	<!-- ex47_event.html -->
+	<h1>테이블</h1>
+	
+	<table id="tbl1">
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+	</table>
+	
+	<script>
+		
+		//Hover Table
+		// const tbl = document.getElementById('tbl1');
+		//alert(tbl.children[0].children.length);
+		// const tr = tbl.firstElementChild.children;
+		
+		const tr = document.querySelectorAll('#tbl1 tr');
+		tr.forEach(row=>{
+			row.onmouseover =function () {
+				// event.target.bgColor = 'gold';
+				// even.srcElement.bgColor='gold';
+				
+				event.currentTarget.bgColor='gold';
+				
+				// row.bgColor='gold';
+				// this.bgColor = 'gold';
+			}
+			
+			row.onmouseout = function () {
+				event.currentTarget.bgColor='transparent';
+			}
+		});
+	
+	
+	</script>
+
+</body>
+</html>

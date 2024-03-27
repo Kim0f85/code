@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="https://kit.fontawesome.com/7121714adf.js" crossorigin="anonymous"></script>
+	<style>
+		body{
+			margin-bottom: 300px;
+		}
+		#box1{
+			border: 1px solid black;
+			width: 200px;
+			height: 200px;
+		}
+		.one{font-size: 3rem;}
+		.two{color: coral;}
+		.three{text-decoration: underline;}
+	</style>
+</head>
+<body>
+<!--	ex50_css.html-->
+	<h1>CSS</h1>
+	
+	<input type="button" value="버튼" id="btn1">
+	<hr>
+	<div id="box1" style="width: 200px">상자</div>
+	
+	<h2>Text</h2>
+	<div class="tool">
+		<button type="button" id="btn3"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+		<button type="button" id="btn4"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+	</div>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aut consectetur ipsum, neque recusandae soluta! Animi, et, repudiandae. A deserunt ducimus labore perferendis saepe. A animi culpa cum debitis ducimus minima officia officiis placeat, possimus. Beatae consequatur consequuntur, cumque debitis ducimus eaque earum eos esse est et explicabo facilis harum, in iure iusto labore libero magnam necessitatibus neque nesciunt nisi nobis odit porro quisquam repudiandae rerum sunt suscipit unde ut vel. Adipisci aliquam cum dolor maiores, qui unde! Alias aliquid assumenda atque consequatur cupiditate enim error ex facilis ipsam itaque laborum libero officia, placeat quo reprehenderit tempora, vel vero? Asperiores aut dolor harum illum ipsum libero necessitatibus quos tenetur voluptates. Ab consectetur corporis cum deserunt, esse et ex fuga hic minus nisi numquam, obcaecati possimus sequi ut voluptatem. Atque cumque dolor earum et facilis fugit ipsum iusto laborum maxime obcaecati porro provident quaerat quibusdam, recusandae repellat temporibus voluptatem voluptatum! Doloremque expedita harum tenetur ut velit. Aliquam atque deserunt eius esse est facere harum, in itaque libero officia pariatur quaerat saepe sint, sit soluta sunt, tenetur. Amet, distinctio dolorum ex fuga fugit impedit modi nam nemo nihil pariatur perspiciatis possimus quidem sed, tempora voluptatum. Ad adipisci alias aperiam at deserunt distinctio dolorem doloremque ducimus eaque earum esse eveniet facilis fugit illum laudantium magni maxime natus officia pariatur praesentium quis recusandae repellat reprehenderit sed ullam, voluptate voluptatem voluptatum! Ab accusamus aut, consectetur cumque cupiditate delectus deserunt ducimus eius eligendi esse excepturi expedita id in modi nam necessitatibus nisi, obcaecati optio pariatur possimus quam quisquam repellat rerum suscipit voluptates. Ab beatae exercitationem itaque magnam neque non perferendis quisquam repudiandae soluta sunt, totam velit. Alias amet at atque aut commodi deserunt dicta dolorum error et, expedita impedit itaque maiores mollitia officiis omnis porro praesentium quidem reprehenderit rerum sequi sit unde vel. Recusandae sint, sunt?</p>
+	
+	<script>
+		document.getElementById('btn1').onclick = function () {
+			const box = document.getElementById('box1');
+			
+			/*
+				JavaScript > CSS 조작
+				1. 모든 태그 > style 속성 제공
+					- 자바스크립트 > Style 프로퍼티 제공
+					*** CSS 속성명 > 프로퍼티명
+						- 속성명이 동일하게 제공한다.
+						- 케밥 표기법(-) > 캐멀표기법으로 변경
+					*** CSS 속성값
+						- 대부분이 문자열로 작성
+				2. class 조작
+				
+						
+				
+			*/
+			
+			// 조직적인 관리 힘듦
+			// box1.style = 'color: blue;';
+			
+			// box1.style.color = 'blue';
+			// box1.style.fontSize ='3rem';
+			
+			// box1.style['color']='blue';
+			// box1.style['font-size']='3rem';
+			
+			//현재 상자의 너비?
+			// box1.style.width = '400px';
+			// alert(box1.style.width);
+			
+			// box1.style.width=parseInt(box1.style.width)+50+'px';
+			
+			//CSS 적용방식과 무관 > 현제 객체에 적용된 모든 CSS 속성 반환
+			const list = window.getComputedStyle(box1);
+			alert(list.width);
+			alert(list.getPropertyValue('width'));
+			alert(list.border);
+			
+			document.getElementById('btn3').onclick = function () {
+				// alert(document.getElementById('content').style.fontSize)
+				size--;
+				document.getElementById('content').style.fontSize=size+'px';
+				document.title=size;
+			};
+			
+			document.getElementById('btn4').onclick = function () {
+				size++;
+				document.getElementById('content').style.fontSize=size+'px';
+				document.title=size;
+			}
+			
+			document.getElementById('btn2').onclick = function (){
+				box1.className = 'one';
+				box1.classlist.add =
+			}
+			
+		}
+	</script>
+</body>
+</html>
