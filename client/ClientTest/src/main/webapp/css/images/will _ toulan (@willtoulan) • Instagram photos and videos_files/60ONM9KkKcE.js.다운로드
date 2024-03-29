@@ -1,3 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("PolarisQPManagerLazy.react",["CometErrorBoundary.react","CometPlaceholder.react","deferredLoadComponent","emptyFunction","react","requireDeferred"],(function(a,b,c,d,e,f,g){"use strict";var h,i=(h||(h=d("react"))).unstable_useMemoCache,j=h,k=c("deferredLoadComponent")(c("requireDeferred")("PolarisQPManager.react").__setRef("PolarisQPManagerLazy.react"));function a(a){var b=i(2);a=a.slot;var d;b[0]!==a?(d=j.jsx(c("CometErrorBoundary.react"),{fallback:c("emptyFunction").thatReturnsNull,children:j.jsx(c("CometPlaceholder.react"),{fallback:null,children:j.jsx(k,{slot:a})})}),b[0]=a,b[1]=d):d=b[1];return d}g["default"]=a}),98);

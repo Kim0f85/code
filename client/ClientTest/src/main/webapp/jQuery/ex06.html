@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            border: 20px solid blue;
+            width: 200px;
+            height: 200px;
+            padding: 30px;
+            margin: 50px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- ex06.html  -->
+
+    <h1>jquery + box model</h1>
+
+    <input type="button" value="버튼1" id="btn1">
+
+    <hr>
+    <div id="box1">상자</div>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        console.log('width', $('#bo1').css('width'));
+        console.log('height', $('#bo1').css('height'));
+        $('#box1')
+
+        //2. 정용 메소드
+        console.log('width', $('#box1').width()); 
+        console.log('height', $('#box1').height());
+
+        //3. width/height + padding = orange 영역
+        console.log('innerWidth', $('#box1').innerWidth());
+        console.log('innerHeight', $('#box1').innerHeight());
+
+        //4. width/height + padding + border = blue 영역
+        console.log('outerWidth', $('#box1').outerWidth());
+        console.log('outerHeight', $('#box1').outerHeight());
+
+        //5. width/height + padding + border + margin = blue 영역
+        console.log('outerWidth(true)', $('#box1').outerWidth(true));
+        console.log('outerHeight(true)', $('#box1').outerHeight(true));
+
+
+    </script>
+</body>
+</html>
