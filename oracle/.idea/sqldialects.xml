@@ -11,5 +11,7 @@
     <file url="file://$PROJECT_DIR$/groupproject/actor.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/groupproject/director.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/groupproject/movie.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/../server/AjaxTest/script.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/../server/Place/script.sql" dialect="OracleSqlPlus" />
   </component>
 </project>

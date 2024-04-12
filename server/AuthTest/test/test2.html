@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth 2.0 Test</title>
+</head>
+<body>
+    <button id="login">Login with Google</button>
+    <div id="user-info"></div>
+
+    <script>
+        const clientId = '76388159425-cpn4a0cqgd2r3a6hd0lc16tmbgrl379n.apps.googleusercontent.com';
+        const redirectUri = 'http://localhost/oauth2callback';
+        const scope = 'https://www.googleapis.com/auth/userinfo.profile';
+
+        document.getElementById('login').onclick = function() {
+            const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
+            window.location = authUrl;
+        };
+
+        function handleRedirect() {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const code = urlParams.get('code');
+            if (code) {
+                fetchUserInfo(code);
+            }
+        }
+
+        async function fetchUserInfo(code) {
+            const tokenUrl = 'https://oauth2.googleapis.com/token';
+            const response = await fetch(tokenUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `code=${code}&client_id=${clientId}&client_secret=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&redirect_uri=${redirectUri}&grant_type=authorization_code`
+            });
+            const data = await response.json();
+            const userInfoUrl = 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=' + data.access_token;
+            const userInfoResponse = await fetch(userInfoUrl);
+            const userInfo = await userInfoResponse.json();
+            document.getElementById('user-info').innerText = `Hello, ${userInfo.name}`;
+        }
+
+        window.onload = handleRedirect;
+    </script>
+</body>
+</html>
