@@ -1,0 +1,11 @@
+package com.test.ajax.model;
+
+public class ZipcodeDTO {
+	private String seql;
+	private String zipcode;
+	private String sido;
+	private String gugun;
+	private String dong;
+	private String bunji;
+	
+}

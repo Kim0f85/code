@@ -1,0 +1,5 @@
+package com.test.login.data;
+
+public class LoginData {
+
+}

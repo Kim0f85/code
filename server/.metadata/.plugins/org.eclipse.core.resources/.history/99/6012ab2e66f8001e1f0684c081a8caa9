@@ -1,0 +1,5 @@
+package com.test.place.model;
+
+public class PlaceDAO {
+
+}

@@ -1,0 +1,21 @@
+package com.test.place.model;
+
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.naming.spi.DirStateFactory.Result;
+
+import com.test.util.DBUtil;
+
+public class PlaceDAO {
+	private Connection conn;
+	private Statement stat;
+	private PreparedStatement pstat;
+	private ResultSet rs;
+	
+	public PlaceDAO() {
+		this.conn = DBUtil.open();
+	}
+}

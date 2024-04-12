@@ -1,0 +1,28 @@
+package com.test.place.data;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.test.place.model.PlaceDAO;
+import com.test.place.model.PlaceDTO;
+
+@WebServlet("/listplace.do")
+public class ListPlace extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		PlaceDAO dao = new PlaceDAO();
+		
+		ArrayList<PlaceDTO>list = dao.list();
+
+	}
+
+}
