@@ -14,11 +14,15 @@
         const redirectUri = 'http://localhost/oauth2callback';
         const scope = 'https://www.googleapis.com/auth/userinfo.profile';
 
+        console.log(clientId);
+        console.log(redirectUri);
+        console.log(scope);
+        
         document.getElementById('login').onclick = function() {
             const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
-            window.location = authUrl;
+            var oauthWindow = window.open(authUrl, 'OAuthWindow', 'width=600,height=700');
+        console.log(authUrl);
         };
-
         function handleRedirect() {
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
